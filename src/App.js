@@ -41,10 +41,12 @@
 import React from 'react';
 import './components2/App1.css';
 import LoginForm from './components2/LoginForm';
+import Logincontinue from './components2/Logincontinue';
 function App() {  
   return (
     <div className="App">
       <LoginForm />
+      <Logincontinue />
     </div>
   );
 }

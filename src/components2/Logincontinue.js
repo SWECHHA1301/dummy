@@ -1,29 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
-const LoginForm = () => {
-  const [phone, setPhone] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Phone:', phone);
-  };
+const LoginContinue = () => {
+  const [otp, setOtp] = useState('');
 
   return (
     <div className="login-container">
       <div className="login-left">
-      <img src="/images/zepto.png" alt="Zepto" />
-        <p>Groceries delivered in 10 minutes</p>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="tel"
-            placeholder="+91 Enter Phone Number"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-          />
-          <button type="submit">Continue</button>
-          <p className="terms">
-            By continuing, you agree to our <br/><a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a>
-          </p>
+        <i></i>
+        <p>OTP Verification</p>
+        <p>OTP has been sent to +91{}</p>
+        <form >
+        <otp separator={<span>-</span>} value={otp} onChange={setOtp} length={5} />
+        <span>Entered value: {otp}</span>
         </form>
       </div>
       <div className="login-right">
@@ -41,4 +29,5 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm
+
+export default LoginContinue
