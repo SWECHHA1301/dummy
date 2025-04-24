@@ -12,6 +12,7 @@ const LoginContinue = () => {
         <form >
         <otp separator={<span>-</span>} value={otp} onChange={setOtp} length={5} />
         <span>Entered value: {otp}</span>
+      
         </form>
       </div>
       <div className="login-right">

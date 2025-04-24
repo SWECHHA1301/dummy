@@ -14,13 +14,14 @@
   background-repeat: no-repeat;
   border-radius: 0 12px 12px 0;
   width: 250px;
+  height: 450px;
   padding: 30px ;
   background-size:cover;
 }
 
 .login-left{
   width: 450px;
-  height: 500px;
+  height: 450px;
   background-image: url('https://cdn.zeptonow.com/web-static-assets-prod/artifacts/12.68.0/_next/static/media/bg-login.32d6e9e5.svg');
   border-radius: 12px 0 0 12px;
   padding: 30px ;
@@ -30,12 +31,6 @@
 .login-left img{
   margin: 57px 0 5px 0;
 }
-
-/* .login-left h1 {
-  color: #e10068;
-  font-size: 2rem;
- 
-} */
 
 .login-left p {
   font-size: 2.3rem;
@@ -48,6 +43,7 @@
   width: 100%;
   padding: 13px;
   margin: 20px 0 18px 0;
+  margin-right: 20px;
   border-radius: 20px;
   border: 1px solid #ccc;
 }
@@ -106,3 +102,4 @@
   font-size: 0.90rem;
   font-weight: none;
 }
+
