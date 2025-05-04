@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import OTPInput from './OTPInput'; // Adjust the import path as necessary
 
 const LoginContinue = () => {
   const [otp, setOtp] = useState('');
@@ -10,7 +11,7 @@ const LoginContinue = () => {
         <p>OTP Verification</p>
         <p>OTP has been sent to +91{}</p>
         <form >
-        <otp separator={<span>-</span>} value={otp} onChange={setOtp} length={5} />
+        <OTPInput separator={<span>-</span>} value={otp} onChange={setOtp} length={5} />
         <span>Entered value: {otp}</span>
       
         </form>
