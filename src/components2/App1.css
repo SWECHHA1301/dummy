@@ -64,13 +64,11 @@
   padding: 16px 13px;
   margin-top: 20px;
   border-radius: 0 20px 20px 0;
-  border: 1px solid #ccc;
-  border-left: none;
+  /* border: 1px solid #ccc; */
+  border: none;
 }
 
-/* .login-left input:hover{
- 
-} */
+
 
 .login-left button {
   width: 100%;
@@ -141,4 +139,5 @@
   font-weight: 550px;
   padding: 12px 0 0 12px;
 }
+
 
