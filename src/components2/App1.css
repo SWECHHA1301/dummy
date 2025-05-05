@@ -2,10 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
+  /* background: white; */
   height: 100vh;
-  padding: 20px;
-  background-color: rgb(236, 236, 236);
+  /* padding: 20px; */
+  background-color: rgba(126, 126, 126, 0.527);
 }
 
 /* .login-left, .login-right {
@@ -26,15 +26,15 @@
   background-color: white;
   background-repeat: no-repeat;
   border-radius: 0 12px 12px 0;
-  width: 250px;
-  height: 450px;
+  width: 200px;
+  height: 400px;
   padding: 30px ;
   background-size:cover;
 }
 
 .login-left{
-  width: 450px;
-  height: 450px;
+  width: 400px;
+  height: 400px;
   background-image: url('leftLogin.svg');
   border-radius: 12px 0 0 12px;
   padding: 30px ;
@@ -56,32 +56,40 @@
   color: white;
   font-weight: bold;
   margin: 15px 40px 7px 0;
+  letter-spacing: 1px;
 }
 
 .login-left input {
-  width: 100%;
-  padding: 13px;
-  margin: 20px 0 18px 0;
-  margin-right: 20px;
-  border-radius: 20px;
+  width: 93%;
+  padding: 16px 13px;
+  margin-top: 20px;
+  border-radius: 0 20px 20px 0;
   border: 1px solid #ccc;
+  border-left: none;
 }
+
+/* .login-left input:hover{
+ 
+} */
 
 .login-left button {
   width: 100%;
-  padding: 13px;
+  padding: 14px 13px;
   background-color:  #ef4372;
-  color: white;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 20px;
   cursor: pointer;
   font-weight: bold;
+  margin-top: 20px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
 }
 
 .login-left .terms {
-  padding-top: 20px;
+  padding-top: 10px;
   font-size: 0.85rem;
-  margin: 15px 0 10px 0;
+  margin: 12px 0 10px 0;
  color: whitesmoke;
   text-align: center;
 }
@@ -121,3 +129,16 @@
   font-size: 0.90rem;
   font-weight: none;
 }
+
+.loginNum{
+  display: flex;
+}
+
+.num{
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 20px 0 0 20px;
+  font-weight: 550px;
+  padding: 12px 0 0 12px;
+}
+

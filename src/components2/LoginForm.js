@@ -14,12 +14,14 @@ const LoginForm = () => {
         <img src="/images/zepto.png" alt="Zepto" />
         <p>Groceries delivered in 10 minutes</p>
         <form onSubmit={handleSubmit}>
+          <div  className='loginNum'>
+        <span className='num'>+91</span>
           <input
-            type="tel"
-            placeholder="+91 Enter Phone Number"
+           type="tel"
+            placeholder="Enter Phone Number"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-          />
+          /></div>
           <button type="submit">Continue</button>
           <p className="terms">
             By continuing, you agree to our <br />
