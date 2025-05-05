@@ -1,13 +1,9 @@
-import React, { useState } from 'react'
-// const LoginForm = () => {
-//   const [phone, setPhone] = useState('');
+import React, { useState } from 'react';
+import OTPInput from './OTPInput'; // Adjust the import path as necessary
 
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     console.log('Phone:', phone);
-//   };
+const LoginContinue = () => {
+  const [otp, setOtp] = useState('');
 
-const LoginContinue=() =>{
   return (
     <div className="login-container">
       <div className="login-left">
@@ -15,17 +11,9 @@ const LoginContinue=() =>{
         <p>OTP Verification</p>
         <p>OTP has been sent to +91{}</p>
         <form >
-        
-          {/* <input
-            type="tel"
-            placeholder="+91 Enter Phone Number"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-          /> */}
-          {/* <button type="submit">Continue</button>
-          <p className="terms">
-            By continuing, you agree to our <br/><a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a>
-          </p> */}
+        <OTPInput separator={<span>-</span>} value={otp} onChange={setOtp} length={5} />
+        <span>Entered value: {otp}</span>
+      
         </form>
       </div>
       <div className="login-right">
@@ -43,4 +31,5 @@ const LoginContinue=() =>{
   );
 };
 
-export default LoginContinue
+
+export default LoginContinue;

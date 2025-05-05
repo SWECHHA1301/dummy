@@ -1,12 +1,12 @@
 .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    height: 100vh;
-    padding: 20px;
-    background-color: rgb(236, 236, 236);
-  } 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: white; */
+  height: 100vh;
+  /* padding: 20px; */
+  background-color: rgba(126, 126, 126, 0.527);
+}
   
   /* .login-left, .login-right {
     /* background: #7c0ab1; */
@@ -26,15 +26,15 @@
     background-color: white;
     background-repeat: no-repeat;
     border-radius: 0 12px 12px 0;
-    width: 250px;
-    height: 450px;
+    width: 200px;
+    height: 400px;
     padding: 30px ;
     background-size:cover;
   }
   
   .login-left{
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     background-image: url('leftLogin.svg');
     border-radius: 12px 0 0 12px;
     padding: 30px ;
