@@ -1,3 +1,4 @@
+import { hover } from "@testing-library/user-event/dist/hover";
 import React, { useRef, useState } from "react";
 
 const OTPInput = ({ length = 6, onChange }) => {
@@ -51,7 +52,7 @@ const OTPInput = ({ length = 6, onChange }) => {
     };
 
     return (
-        <div style={{ display: "flex", gap: "8px" }}>
+        <div   className="OTP" style={{ display: "flex", gap: "8px" , flexDirection: "row-reverse",}}>
             {otp.map((value, index) => (
                 <input
                     key={index}
@@ -64,12 +65,13 @@ const OTPInput = ({ length = 6, onChange }) => {
                     onPaste={(e) => handlePaste(e, index)}
                     ref={(el) => (inputRefs.current[index] = el)}
                     style={{
-                        width: "2rem",
-                        height: "2rem",
+                        width: "2.2rem",
+                        height: "2.8rem",
                         textAlign: "center",
-                        fontSize: "1.5rem",
+                        fontSize: "1rem",
                         border: "1px solid #ccc",
-                        borderRadius: "4px"
+                        borderRadius: "20px",
+                        margin:"24px  2px 20px 2px",
                     }}
                     aria-label={'Digit ${index + 1}'}
                 
