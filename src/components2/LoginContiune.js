@@ -9,8 +9,8 @@ const LoginContinue = () => {
     <div className="login-container">
       <div className="login-left">
         <i></i>
-        <p>OTP Verification</p>
-        <p>OTP has been sent to +91{}</p>
+        <p className='verify'>OTP Verification</p>
+        <p className='sended'>OTP has been sent to +91{}</p>
         <form >
         <OTPInput separator={<span>-</span>} value={otp} onChange={setOtp} length={5} />
         <span>Entered value: {otp}</span>

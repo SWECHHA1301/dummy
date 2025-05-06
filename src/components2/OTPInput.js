@@ -52,7 +52,7 @@ const OTPInput = ({ length = 6, onChange }) => {
     };
 
     return (
-        <div   className="OTP" style={{ display: "flex", gap: "8px" , flexDirection: "row-reverse",}}>
+        <div   className="OTP" style={{ display: "flex", gap: "10px" , flexDirection: "row", margin:"30px 0 30px 50px",}}>
             {otp.map((value, index) => (
                 <input
                     key={index}
@@ -71,7 +71,7 @@ const OTPInput = ({ length = 6, onChange }) => {
                         fontSize: "1rem",
                         border: "1px solid #ccc",
                         borderRadius: "20px",
-                        margin:"24px  2px 20px 2px",
+                        // margin:"24px  2px 20px 2px",
                     }}
                     aria-label={'Digit ${index + 1}'}
                 
