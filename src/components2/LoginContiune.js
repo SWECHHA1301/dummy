@@ -4,13 +4,14 @@ import OTPInput from './OTPInput'; // Adjust the import path as necessary
 
 const LoginContinue = () => {
   const [otp, setOtp] = useState('');
-
+  // const [phone, setPhone] = useState('');
   return (
     <div className="login-container">
       <div className="login-left">
         <i></i>
         <p className='verify'>OTP Verification</p>
         <p className='sended'>OTP has been sent to +91{}</p>
+        {/* <LoginForm  value={phone} onChange={setPhone}/> */}
         <form >
         <OTPInput separator={<span>-</span>} value={otp} onChange={setOtp} length={5} />
         <span>Entered value: {otp}</span>

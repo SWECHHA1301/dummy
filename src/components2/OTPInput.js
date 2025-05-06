@@ -52,7 +52,7 @@ const OTPInput = ({ length = 6, onChange }) => {
     };
 
     return (
-        <div   className="OTP" style={{ display: "flex", gap: "10px" , flexDirection: "row-reverse", margin:"30px 0 30px 50px",}}>
+        <div   className="OTP" style={{ display: "flex", gap: "10px" , flexDirection: "row", margin:"30px 0 30px 50px",}}>
             {otp.map((value, index) => (
                 <input
                     key={index}
