@@ -37,16 +37,23 @@
 
 // export default App;
 // import React from 'react';
-import React from 'react';
-import LoginContinue from './components2/LoginContiune';
-import './components2/App2.css'
+import { ProductDetails } from './components2/ProductDetails';
+import Navbar from './components/Navbar';
+import React, { useState } from 'react';
+// import LoginContinue from './components2/LoginContiune';
+// import './components2/App2.css'
 // import './components2/App1.css';
 // import LoginForm from './components2/LoginForm';
+import './components/app.css'
+import './App.css'
 function App() {  
+  const [searchTerm, setSearchTerm] = useState('');
   return (
     <div className="App">
       {/* <LoginForm /> */}
-      <LoginContinue/>
+      {/* <LoginContinue/> */}
+      <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+      <ProductDetails/>
     </div>
   );
 }
