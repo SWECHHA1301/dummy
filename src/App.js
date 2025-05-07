@@ -1,5 +1,4 @@
 
-// import './App.css';
 // import React, { useState } from 'react';
 // import Navbar from './components/Navbar';
 // import Main from './components/Main';
@@ -37,17 +36,16 @@
 // }
 
 // export default App;
-// import React from 'react';
 import React from 'react';
+// import LoginContinue from './components2/LoginContiune';
+// import './components2/App2.css'
 import './components2/App1.css';
-
 import LoginForm from './components2/LoginForm';
-import Logincontinue from './components2/Logincontinue';
 function App() {  
   return (
     <div className="App">
       <LoginForm />
-      <Logincontinue />
+      {/* <LoginContinue/> */}
     </div>
   );
 }
