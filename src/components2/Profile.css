@@ -1,0 +1,151 @@
+.profile-container {
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 12px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .profile-info h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .profile-info p {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .zepto-cash-card {
+    background-color: #f8f1fb;
+    border: 1px solid #e0d5ee;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .zepto-card-title-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .wallet-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .zepto-title {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .card-dashed-line {
+    border-top: 1px dashed #ccc;
+    margin: 10px 0;
+  }
+  
+  .zepto-balance-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .zepto-balance {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .add-balance-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .add-balance-btn:hover {
+    background-color: #333;
+  }
+
+  .free-cash-card {
+    background-color: #f8f1fb;
+    border: 1px solid #e0d5ee;
+    border-radius: 10px;
+    padding: 12px 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .free-cash-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .free-cash-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4c1577;
+  }
+  
+  .free-cash-amount {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4c1577;
+  }
+  
+  /* Options */
+  .profile-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .option-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+  
+  .option-item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .option-item img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .logout {
+    color: #d9534f;
+  }
+  
+  

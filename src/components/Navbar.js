@@ -3,9 +3,7 @@ import React from 'react'
  function Navbar({ searchTerm, setSearchTerm }) {
   return (
     <>
-
-
-      <div>
+<div>
   <header>
     <div className="logo">
       <img src="logo.svg" alt="logo" />
@@ -51,4 +49,4 @@ import React from 'react'
 }
 
 
-export default Navbar
+export default Navbar;

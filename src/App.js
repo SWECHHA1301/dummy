@@ -36,16 +36,22 @@
 // }
 
 // export default App;
-import React from 'react';
+
+// import { ProductDetails } from './components2/ProductDetails';
+import React, { useState } from 'react';
+import ProfileSection from './components2/ProfileSection';
 // import LoginContinue from './components2/LoginContiune';
 // import './components2/App2.css'
-import './components2/App1.css';
-import LoginForm from './components2/LoginForm';
+// import './components2/App1.css';
+// import LoginForm from './components2/LoginForm';
+import './components/app.css'
+import './App.css'
 function App() {  
+  const [searchTerm, setSearchTerm] = useState('');
   return (
     <div className="App">
-      <LoginForm />
-      {/* <LoginContinue/> */}
+      <ProfileSection searchTerm={searchTerm}/>
+    
     </div>
   );
 }
