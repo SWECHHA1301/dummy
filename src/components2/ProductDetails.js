@@ -42,7 +42,7 @@ return(
 
             <p style={{color:"#797c8d", margin:'5px 0 0 25px',fontSize:'14px'}}>MRP <b>₹439</b> (incl. of all taxes)</p>
             <div style={{ width:'450px',height:'60px',backgroundColor:'#f9f9fd',margin:'20px 0 0 25px',borderRadius:'6px', border:'1px solid #f0f4f9',display:'flex'}}>
-            <div style={{width:'50px',height:'50px'}}></div>
+            <div style={{width:'30px',height:'30px',border:'1px solid black', borderRadius:'4px',margin:'15px 6px 0 8px'}}></div>
             <div>
                 
                 <p style={{fontSize:'12px',margin:'16px 0 0 0'}}>Get at 89 with coupon offers</p>
@@ -68,8 +68,141 @@ return(
 
           
             </div> 
+            <div style={{display:'flex'}}>
             <p style={{color:'#5a6477',fontSize:'16px',fontWeight:'bold',margin:'20px 0 0 25px'}}>Coupon & Offers</p>
-            <hr style={{ width:'70%',backgroundColor:''}}/>
+            <div style={{ width:'62%',height:'1px',backgroundColor:'#ebecef',margin:'28px 10px 0 10px'}}></div>
+        </div>
+
+        <div style={{display:'flex'}}>
+            <div style={{ width: '32px',
+    height: '32px',
+    borderRadius: '4px',
+    border: '1px solid rgb(218, 218, 218)',
+    margin:'20px 0 0 25px'
+    }}></div>
+    <div style={{margin:'27px 0 0 5px',fontSize:'14px',color:'#262a33'}}>100 FREE CASH on Zepto Cafe Items!</div>
+    <svg
+            fill="none"
+            height="16"
+            viewBox="0 0 17 16"
+            width="17"
+            xmlns="http://www.w3.org/2000/svg"
+            style={{ height: '1rem', width: '1rem', color: '#FA3778', margin:'27px 0 0 8px',}}
+          >
+            <path
+              d="M7 4.5L10.5 8L7 11.5"
+              stroke="#FA3778"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+            />
+          </svg>
+        </div>
+
+        <div style={{display:'flex'}}>
+            <div style={{ width: '32px',
+    height: '32px',
+    borderRadius: '4px',
+    border: '1px solid rgb(218, 218, 218)',
+    margin:'12px 0 0 25px'
+    }}></div>
+    <div style={{margin:'20px 0 0 5px',fontSize:'14px',color:'#262a33'}}>Get assured rewards with CRED</div>
+    <svg
+            fill="none"
+            height="16"
+            viewBox="0 0 17 16"
+            width="17"
+            xmlns="http://www.w3.org/2000/svg"
+            style={{ height: '1rem', width: '1rem', color: '#FA3778', margin:'20px 0 0 8px',}}
+          >
+            <path
+              d="M7 4.5L10.5 8L7 11.5"
+              stroke="#FA3778"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+            />
+          </svg>
+        </div>
+
+        <div style={{display:'flex'}}>
+            <div style={{ width: '32px',
+    height: '32px',
+    borderRadius: '4px',
+    border: '1px solid rgb(218, 218, 218)',
+    margin:'12px 0 0 25px'
+    }}></div>
+    <div style={{margin:'20px 0 0 5px',fontSize:'14px',color:'#262a33'}}>Get flat ₹25 discount with BHIM App</div>
+    <svg
+            fill="none"
+            height="16"
+            viewBox="0 0 17 16"
+            width="17"
+            xmlns="http://www.w3.org/2000/svg"
+            style={{ height: '1rem', width: '1rem', color: '#FA3778', margin:'20px 0 0 8px',}}
+          >
+            <path
+              d="M7 4.5L10.5 8L7 11.5"
+              stroke="#FA3778"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+            />
+          </svg>
+        </div>
+
+        <div style={{display:'flex'}}>
+            <div style={{ width: '32px',
+    height: '32px',
+    borderRadius: '4px',
+    border: '1px solid rgb(218, 218, 218)',
+    margin:'12px 0 0 25px'
+    }}></div>
+    <div style={{margin:'20px 0 0 5px',fontSize:'14px',color:'#262a33'}}>Get up to ₹25 cashback using Amazon Pay Balance</div>
+    <svg
+            fill="none"
+            height="16"
+            viewBox="0 0 17 16"
+            width="17"
+            xmlns="http://www.w3.org/2000/svg"
+            style={{ height: '1rem', width: '1rem', color: '#FA3778', margin:'20px 0 0 8px',}}
+          >
+            <path
+              d="M7 4.5L10.5 8L7 11.5"
+              stroke="#FA3778"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+            />
+          </svg>
+        </div>
+
+        <div style={{display:'flex'}}>
+            <div style={{ width: '32px',
+    height: '32px',
+    borderRadius: '4px',
+    border: '1px solid rgb(218, 218, 218)',
+    margin:'12px 0 0 25px'
+    }}></div>
+    <div style={{margin:'20px 0 0 5px',fontSize:'14px',color:'#262a33'}}>Get Up to ₹50 cashback on minimum transaction of ₹399</div>
+    <svg
+            fill="none"
+            height="16"
+            viewBox="0 0 17 16"
+            width="17"
+            xmlns="http://www.w3.org/2000/svg"
+            style={{ height: '1rem', width: '1rem', color: '#FA3778', margin:'20px 0 0 8px',}}
+          >
+            <path
+              d="M7 4.5L10.5 8L7 11.5"
+              stroke="#FA3778"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+            />
+          </svg>
+        </div>
+
         </div>
     </div>
 </div>
