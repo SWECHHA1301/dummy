@@ -101,7 +101,7 @@ const Coffee = ({ searchTerm }) => {
           {filtered.map((item, index) => (
             <div className="slide" key={index}>
               <img src={item.image} alt={item.name} />
-              <h5>{item.name}</h5>
+              <h5 className="product-name">{item.name}</h5>
               <p className="ml">{item.volume}</p>
               <p className="price">
                 ₹{item.price} <del>₹{item.originalPrice}</del>

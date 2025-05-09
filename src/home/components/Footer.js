@@ -9,7 +9,7 @@ function Footer() {
     <div className="first">
  
      <ul>
-       <li><img src="logo (1).svg"
+       <li><img src="https://cdn.zeptonow.com/web-static-assets-prod/artifacts/12.72.2/images/header/primary-logo.svg"
        alt="logo2"/></li>
        <li>
          <i className="fab fa-instagram" aria-hidden="true"></i>

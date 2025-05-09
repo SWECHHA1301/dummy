@@ -1,17 +1,18 @@
 
 // import React, { useState } from 'react';
-// import Navbar from './components/Navbar';
-// import Main from './components/Main';
-// import Coffee from './components/Coffee';
-// import Elevate from './components/Elevate'; 
-// import Store from './components/Store';
-// import Home from './components/Home';
-// import Meal from './components/Meal';
-// import Newstore from './components/Newstore';
-// import Howitworks from './components/Howitworks';
-// import Search from './components/Search';
-// import Categories from './components/Categories';
-// import Footer from './components/Footer';
+// import Navbar from './home/components/Navbar';
+// import Main from './home/components/Main';
+// import Coffee from './home/components/Coffee';
+// import Elevate from './home/components/Elevate'; 
+// import Store from './home/components/Store';
+// import Home from './home/components/Home';
+// import Meal from './home/components/Meal';
+// import Newstore from './home/components/Newstore';
+// import Howitworks from './home/components/Howitworks';
+// import Search from './home/components/Search';
+// import Categories from './home/components/Categories';
+// import Footer from './home/components/Footer';
+// import './home/components/app.css'
 
 
 
@@ -37,23 +38,15 @@
 
 // export default App;
 
-// import { ProductDetails } from './components2/ProductDetails';
+
 import React, { useState } from 'react';
-// import ProfileSection from './components2/ProfileSection';
-// import Navbar from './components/Navbar'
-import {ProductDetails} from './components2/ProductDetails'
-// import LoginContinue from './components2/LoginContiune';
-// import './components2/App2.css'
-// import './components2/App1.css';
-// import LoginForm from './components2/LoginForm';
-import './components/app.css'
-import './App.css'
+
+import {ProductDetails} from './product/ProductDetails'
+import './product/App.css'
 function App() {  
   const [searchTerm, setSearchTerm] = useState('');
   return (
     <div className="App">
-      {/* <ProfileSection searchTerm={searchTerm}/>
-      <Navbar /> */}
       <ProductDetails />
     
     </div>
