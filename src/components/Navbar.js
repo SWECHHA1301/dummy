@@ -6,10 +6,10 @@ import React from 'react'
 <div>
   <header>
     <div className="logo">
-      <img src="logo.svg" alt="logo" />
+      <img src="https://cdn.zeptonow.com/web-static-assets-prod/artifacts/12.72.2/images/header/primary-logo.svg" alt="logo" />
     </div>
     <div className="ss">
-      <button className="btn"><img src="ss.svg" alt="super saver" /></button>
+      <button className="btn"><img src="	https://cdn.zeptonow.com/web-static-assets-prod/ar….72.2/images/super-saver/super-saver-inactive.svg" alt="super saver" /></button>
     </div>
     <div className="location">
       <label htmlFor="location">Select Location</label>
