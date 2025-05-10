@@ -57,9 +57,9 @@
 // export default App;
 
 import { useState } from "react";
-import './ProductDetails/product.css'
-import './ProductDetails/components/ListItems/Item.css'
-import ProductDetail from './ProductDetails/ProductDetail';
+import './product/Product.css'
+import './product/components/ListItems/Item.css'
+import ProductDetails from './product/ProductDetails';
 // import Navbar from './zepto/Navbar'
 // import './zepto/zepto.css'
 function App() {  
@@ -67,8 +67,7 @@ function App() {
   return (
     <div className="App">
     {/* <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/> */}
-    <ProductDetail/>
-   
+    <ProductDetails searchTerm={searchTerm}/>
     </div>
   );
 }
