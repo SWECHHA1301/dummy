@@ -39,16 +39,36 @@
 // export default App;
 
 
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
+// import ProfileSection from './profile/ProfileSection'
+// import Navbar from './home/components/Navbar'
+// import './home/components/app.css'
+// import './product/App.css'
+// function App() {  
+//   const [searchTerm, setSearchTerm] = useState('');
+//   return (
+//     <div className="App">
+//       <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+//       <ProfileSection /> 
+    
+//     </div>
+//   );
+// }
+// export default App;
 
-import {ProductDetails} from './product/ProductDetails'
-import './product/App.css'
+import { useState } from "react";
+import './ProductDetails/product.css'
+import './ProductDetails/components/ListItems/Item.css'
+import ProductDetail from './ProductDetails/ProductDetail';
+// import Navbar from './zepto/Navbar'
+// import './zepto/zepto.css'
 function App() {  
   const [searchTerm, setSearchTerm] = useState('');
   return (
     <div className="App">
-      <ProductDetails />
-    
+    {/* <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/> */}
+    <ProductDetail/>
+   
     </div>
   );
 }

@@ -1,9 +1,12 @@
-export function ProductDetails() {
-    
+import SimilarItem from "./components/ListItems/SimilarItem";
+import { useState } from "react";
+function ProductDetail() {
+      const [searchTerm, setSearchTerm] = useState('');
 return(
 
     <>
     <div className="Product">
+      <div style={{display:'flex',}}>
         <div>
     <div className="Nav">
         <span><a href="https://www.zeptonow.com/">Home</a>
@@ -77,19 +80,17 @@ return(
             <div className="print"></div>
            </div>
 
-            <div style={{color:"#797c8d", margin: '10px 0 0 20px',fontSize:'14px', letterSpacing:'1px',display:"flex"}}>Net Qty: <b>450 ml</b>
-            <div style={{width:'60px',height:'25px',backgroundColor:'#046d45',
-                color:'white',fontWeight:'bold',borderRadius:"6px", padding:"5px 0 0 25px",margin:'0 5px',
-            }}>4.4</div>(2.1k)</div>
+            <div className="Qty">Net Qty: <b>450 ml</b>
+            <div className="Rate">4.4</div>(2.1k)</div>
 
-            <div style={{display:'flex',alignItems:'center'}}>
-                <h3 style={{margin:'10px 0 0 20px',fontSize:'25px'}}>189</h3>
-                <p style={{color:'#046d45', margin:'12px 0 0 6px',fontSize:'15px',fontWeight:'bold'}}>56% Off</p>
+            <div className="Price">
+                <h3>189</h3>
+                <p>56% Off</p>
                 
             </div>
-
-            <p style={{color:"#797c8d", margin:'5px 0 0 25px',fontSize:'14px'}}>MRP <b>₹439</b> (incl. of all taxes)</p>
-            <div style={{ width:'450px',height:'60px',backgroundColor:'#f9f9fd',margin:'20px 0 0 25px',borderRadius:'6px', border:'1px solid #f0f4f9',display:'flex'}}>
+            
+            <p className="mrp">MRP <b>₹439</b> (incl. of all taxes)</p>
+            <div className="CouponOffer">
             <div style={{width:'30px',height:'30px',border:'1px solid black', borderRadius:'4px',margin:'15px 6px 0 8px'}}></div>
             <div>
                 
@@ -250,11 +251,106 @@ return(
             />
           </svg>
         </div>
+          <p style={{margin:'20px 0 0 25px'}}><a  href="#" style={{color:'#FA3778',textDecorationLine:'none',fontSize:'14px',fontWeight:'bold',letterSpacing:'1px'}}>
+            View all coupons</a></p>
+            <div style={{ width:'92%',height:'1px',backgroundColor:'#ebecef',margin:'20px 10px 0 20px'}}></div>
+             <div style={{display:'flex',margin:'25px 0 0 25px'}}>
+              <div style={{width:'100px',height:'100px',backgroundColor:'#f9f9fd',borderRadius:'16px'}}>
+                <div style={{width:'50px',height:'50px'}}></div>
+                <p style={{fontSize:'10px',textAlign:'center',margin:'15px 0 0 0 '}}>No Return or Exchange</p>
+              </div>
+              <div style={{width:'100px',height:'100px',backgroundColor:'#f9f9fd',borderRadius:'16px',margin:'0 0 0 12px'}}>
+                <div style={{width:'50px',height:'50px'}}></div>
+                <p style={{fontSize:'10px',textAlign:'center',margin:'15px 0 0 0 '}}>Fast Delivery</p>
+              </div>
+             </div>
 
         </div>
-    </div>
+
+        <div className="DetailSec2">
+          <h4>Highlights</h4>
+         <table>
+         <tr>
+            <td>Brand</td>
+            <td>Zepto Cafe</td>
+          </tr>
+
+          <tr>
+            <td>Product Type</td>
+            <td>Cold Coffee-Coffee</td>
+          </tr>
+          <tr>
+            <td>Key Features</td>
+            <td>Our bestseller Strong brewed coffee meets velvety condensed milk over ice refreshing rich and just the right kind of pickmeup</td>
+          </tr>
+          <tr>
+            <td>Ingredients</td>
+            <td>Coffee, Sweetened Condensed Milk, and Ice</td>
+          </tr>
+          <tr>
+            <td>Allergen Information</td>
+            <td>Contains: Milk</td>
+          </tr>
+          <tr>
+            <td>Nutrition Information</td>
+            <td>Energy (kcal) 76.6, Protein (g) 2.5, Carbohydrate (g) 12.6, Sugar (g) 8.4, Sodium (mg) 28.9, Fat (g) 1.9</td>
+          </tr>
+          <tr>
+            <td>Dietary Preference</td>
+            <td>Veg</td>
+          </tr>
+          <tr>
+            <td>Serving Size</td>
+            <td>450 g</td>
+          </tr>
+          <tr>
+            <td>Weight</td>
+            <td>450 ml</td>
+          </tr>
+         </table>
+        </div>
+
+            <div className="DetailSec2">
+          <h4>Information</h4>
+         <table>
+         <tr>
+            <td>Disclaimer</td>
+            <td>Efforts are made to ensure accuracy, but product packaging may have additional or updated details.. Please do not rely solely on the information provided and refer to the packaging for complete details. Nutritional information is provided per 100g/ml.</td>
+          </tr>
+
+          <tr>
+            <td>Customer Care Details</td>
+            <td>In case of any issue, contact us E-mail address: support@zeptonow.com</td>
+          </tr>
+          <tr>
+            <td>Refund Policy</td>
+            <td>Refunds/complaints window is 12 hrs</td>
+          </tr>
+          <tr>
+            <td>Seller Name</td>
+            <td>Drogheria Sellers Private Limited</td>
+          </tr>
+          <tr>
+            <td>Seller Address</td>
+            <td>Brigade IRV, 9th & 10th Floors, Nallurhalli, White Field, Bangalore, Banglore, Karnataka, India, 560066 For Support ReachOut : support+drogheria@zeptonow.com</td>
+          </tr>
+          <tr>
+            <td>Seller License No.</td>
+            <td>11522998001570</td>
+          </tr>
+         
+     </table>
+        </div>
+  
+    </div></div>
+
+  <div><SimilarItem searchTerm={searchTerm} title={'Similar Product'}/></div>
+   <div><SimilarItem searchTerm={searchTerm} title={'You might also like'}/></div>
+   
 </div>
     </>
 )
 
 }
+
+export default ProductDetail;

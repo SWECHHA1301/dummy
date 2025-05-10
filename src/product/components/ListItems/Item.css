@@ -1,0 +1,81 @@
+h5{
+    margin: 20px 0 20px 72px;
+}
+
+.slides {
+   margin: 10px 20px 0 65px;
+  }
+  
+  .slider {
+    display: flex;
+    overflow-x: auto;
+    /* padding-bottom: 10px; */
+    gap: 16px;
+    scroll-behavior: smooth;
+    
+  }
+  
+  .slide {
+    max-width: 165px;
+    /* min-width: 165px; */
+    background: #fff;
+    border-radius: 10px;
+    padding: 6px;
+    text-align: left;
+    flex-shrink: 0;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slide img:hover {
+    transform: scale(1.1);
+  }
+  
+  .itemName{
+    font-size: 14px;
+    padding: 10px 4px 0 4px;
+    height: 40px;
+  }
+  
+  .price {
+    color: black;
+    font-size: 13px;
+    font-weight: 550;
+    gap:1px;
+    padding: 0 0 0 3px;
+  }
+  
+  .ml {
+    font-size: 14px;
+    padding: 3px 0 0 3px;
+  }
+  del {
+    color: grey;
+    font-size: 10px;
+  }
+  
+  button {
+    color: #ff007f;
+    border: 1px solid #ff007f;
+    background-color: #fff;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 0 5px 0 5px;
+    /* padding: 0 40px; */
+    width: 92%;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+}
+
+
+
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
