@@ -39,37 +39,37 @@
 // export default App;
 
 
-// import React, { useState } from 'react';
-// import ProfileSection from './profile/ProfileSection'
-// import Navbar from './home/components/Navbar'
-// import './home/components/app.css'
-// import './product/App.css'
-// function App() {  
-//   const [searchTerm, setSearchTerm] = useState('');
-//   return (
-//     <div className="App">
-//       <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-//       <ProfileSection /> 
-    
-//     </div>
-//   );
-// }
-// export default App;
-
-import { useState } from "react";
-import './product/Product.css'
-import './product/components/ListItems/Item.css'
-import ProductDetails from './product/ProductDetails';
-// import Navbar from './zepto/Navbar'
-// import './zepto/zepto.css'
+import React, { useState } from 'react';
+import ProfileSection from './profile/ProfileSection'
+import Profile from './profile/Profile';
+import Navbar from './home/components/Navbar'
+import './home/components/app.css'
 function App() {  
   const [searchTerm, setSearchTerm] = useState('');
   return (
     <div className="App">
-    {/* <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/> */}
-    <ProductDetails searchTerm={searchTerm}/>
+      <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+      <ProfileSection />
+      <Profile />
     </div>
   );
 }
 export default App;
+
+// import { useState } from "react";
+// import './product/Product.css'
+// import './product/components/ListItems/Item.css'
+// import ProductDetails from './product/ProductDetails';
+// // import Navbar from './zepto/Navbar'
+// // import './zepto/zepto.css'
+// function App() {  
+//   const [searchTerm, setSearchTerm] = useState('');
+//   return (
+//     <div className="App">
+//     {/* <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/> */}
+//     <ProductDetails searchTerm={searchTerm}/>
+//     </div>
+//   );
+// }
+// export default App;
 

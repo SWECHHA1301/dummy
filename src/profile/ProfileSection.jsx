@@ -1,5 +1,5 @@
 import React from 'react';
-import './Profile.css';
+import "./ProfileSection.css"; // Import the CSS file for styling
 
 const Profile = () => {
   return (
@@ -58,7 +58,7 @@ const Profile = () => {
           <span>Profile</span>
         </div>
         <div className="option-item logout">
-          <button>Logout</button>
+          <span>Logout</span>
         </div>
       </div>
       </div> 
