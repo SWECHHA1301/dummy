@@ -1,5 +1,5 @@
 import React from 'react';
-import "./ProfileSection.css"; // Import the CSS file for styling
+import "./ProfileSection.css"; 
 
 const Profile = () => {
   return (
@@ -16,7 +16,7 @@ const Profile = () => {
           <p>+91 9876543210</p>
         </div>
       </div>
-
+      
       <div class="zepto-cash-card">
   <div class="zepto-card-title-row">
     <img src="https://www.zeptonow.com/images/wallet.svg" alt="Wallet Icon" class="wallet-icon" />

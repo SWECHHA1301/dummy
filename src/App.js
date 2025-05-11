@@ -40,17 +40,19 @@
 
 
 import React, { useState } from 'react';
-import ProfileSection from './profile/ProfileSection'
-import Profile from './profile/Profile';
+// import ProfileSection from './profile/ProfileSection'
+// import Profile from './profile/Profile';
 import Navbar from './home/components/Navbar'
 import './home/components/app.css'
+import Cart from './cart/Cart';
 function App() {  
   const [searchTerm, setSearchTerm] = useState('');
   return (
     <div className="App">
       <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-      <ProfileSection />
-      <Profile />
+      {/* <ProfileSection />
+      <Profile /> */}
+      <Cart />
     </div>
   );
 }
@@ -72,4 +74,5 @@ export default App;
 //   );
 // }
 // export default App;
-
+// https://cdn.zeptonow.com/production/tr:w-100,ar-1000-1000,pr-true,f-auto,q-80/cms/product_variant/c54acebc-d816-419a-b652-37477e3187e7.jpeg
+// https://cdn.zeptonow.com/production/tr:w-100,ar-5304-5304,pr-true,f-auto,q-80/cms/product_variant/9bc896d4-229d-45a4-8294-b36f97f5992c.jpeg
