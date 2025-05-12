@@ -31,10 +31,10 @@ import React from 'react'
       <ul>
 
         <li><i className="fa-regular fa-circle-user" style={{color: "#0d0d0c"}}></i>
-          <span>Login</span>
+          <span><a href="/ProfileSection.jsx">Login</a></span>
         </li>
         <li><i className="fa fa-cart-plus" aria-hidden="true" style={{color: "#0d0d0c"}}></i>
-          <span>Cart</span>
+          <span><a href="/cart.js">Cart</a></span>
         </li>
 
       </ul>

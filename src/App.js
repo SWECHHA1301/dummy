@@ -44,15 +44,17 @@ import React, { useState } from 'react';
 // import Profile from './profile/Profile';
 import Navbar from './home/components/Navbar'
 import './home/components/app.css'
-import Cart from './cart/Cart';
+// import Cart from './cart/Cart';
+import Order from './orders/Order';
 function App() {  
   const [searchTerm, setSearchTerm] = useState('');
   return (
     <div className="App">
       <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
       {/* <ProfileSection />
-      <Profile /> */}
-      <Cart />
+      <Profile />
+      <Cart /> */}
+      <Order />
     </div>
   );
 }

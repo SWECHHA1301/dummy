@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import './Cart.css';
 import { FiShoppingCart } from 'react-icons/fi';
 
+
 const Cart = () => {
+  const [showDrawer, setShowDrawer] = useState(false);
   const [cartItems, setCartItems] = useState([
     {
       id: 1,
@@ -20,7 +22,7 @@ const Cart = () => {
       weight: "250g",
       price: 179,
       originalPrice: 219,
-      img: 'https://cdn.zeptonow.com/production/tr:w-350,ar-3396-3396,pr-true,f-auto,q-80/cms/product_variant/f5d5ad7d-f9a4-4765-9e20-79f1c557c567.jpeg'
+      img: 'https://cdn.zeptonow.com/production/ik-seo/tr:w-1280,ar-4754-4754,pr-true,f-auto,q-80/cms/product_variant/d5088166-2bfb-4472-8929-ac8e85cb9004/Dal-Makhani-Rice.jpeg'
     }
   ]);
 
@@ -98,54 +100,54 @@ const Cart = () => {
           className='pass-icon' /> Free delivery above <b>₹99</b></p>
         </div>
 
-        <div className="total-price">
-  <p>Total: ₹{cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0)}</p>
-</div>
-
 
          <div className="cash-option">
           <input type="checkbox" />
           <span>Apply ₹50 Free Cash</span>
         </div>
 
+
         <div className="cart-footer">
-  <div className="pay-section">
-    <div className="pay-left">
+
+  <div className="to-pay-drawer">
+  <div className="drawer-header" onClick={() => setShowDrawer(!showDrawer)}>
+    <div>
       <p className="pay-title">To Pay</p>
       <small>Incl. all taxes and charges</small>
     </div>
-    <div className="pay-right">
-      <p><del>₹222.67</del> ₹187.67</p>
-      <span className="green-text">SAVINGS ₹35</span>
+    <div className="drawer-price">
+      <p><del> ₹{cartItems.reduce((acc, item) => acc + item.originalPrice * item.quantity, 0)}</del>
+       ₹{cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0)}</p>
+      <span className="green-text">SAVINGS ₹{cartItems.reduce((acc, item) => acc + item.originalPrice * item.quantity - (item.price * item.quantity), 0)}</span>
     </div>
+    <span className={`arrow ${showDrawer ? 'open' : ''}`}>▾</span>
   </div>
 
-  <div className="accordion-item">
-    <i class="bi bi-chat-left-dots"></i>
-    <div>
-      <p>Delivery Instructions</p>
-      <small>Delivery partner will be notified</small>
+  {showDrawer && (
+    <div className="drawer-body">
+      <h4>📄 Bill Summary</h4>
+      <div className="summary-row">
+        <span>Item Total & GST</span>
+        <span> ₹{cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0)}</span>
+      </div>
+      <div className="summary-row">
+        <span>Delivery Fee</span>
+        <span><del>₹25</del> ₹0</span>
+      </div>
+      <div className="summary-row">
+        <span>Handling Charge</span>
+        <span><del>₹21.99</del> ₹11.99</span>
+      </div>
+      <hr />
+      <div className="summary-row bold">
+        <span>To Pay</span>
+        <span><del> ₹{cartItems.reduce((acc, item) => acc + item.originalPrice * item.quantity, 0)}</del>
+        ₹{cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0)}</span>
+      </div>
+      <span className="green-text">SAVINGS ₹{cartItems.reduce((acc, item) => acc + item.originalPrice * item.quantity - (item.price * item.quantity), 0)}</span>
     </div>
-    <span>▾</span>
-  </div>
-
-  <div className="accordion-item">
-    <i class="bi bi-cash"></i>
-    <div>
-      <p>Delivery Partner Tip</p>
-      <small>This amount goes to your delivery partner</small>
-    </div>
-    <span>▾</span>
-  </div>
-
-  <div className="accordion-item">
-   <i class="bi bi-scooter"></i>
-    <div>
-      <p>Delivery Partner’s Safety</p>
-      <small>Learn more about how we ensure their safety</small>
-    </div>
-    <span>▾</span>
-  </div>
+  )}
+</div>
 </div>
 
       </div>

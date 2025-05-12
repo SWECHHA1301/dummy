@@ -162,12 +162,6 @@
   margin-top: 4px;
 }
 
-.total-price {
-  font-weight: bold;
-  font-size: 1.1rem;
-  margin-top: 1rem;
-  text-align: right;
-}
 .original-price {
   text-decoration: line-through;
   color: #999;
@@ -220,25 +214,6 @@
   font-weight: 500;
 }
 
-.accordion-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 0;
-  border-top: 1px solid #f0f0f0;
-}
-
-.accordion-item img {
-  width: 20px;
-  height: 20px;
-}
-
-.accordion-item span {
-  margin-left: auto;
-  font-size: 18px;
-  color: #666;
-}
-
 
 .add-address {
   position: absolute;
@@ -258,4 +233,48 @@
   font-size: 16px;
   border-radius: 8px;
   font-weight: bold;
+}
+
+
+.to-pay-drawer {
+  background: #fff;
+  border-radius: 10px;
+  margin: 15px 0;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.drawer-header > div:first-child {
+  flex: 1;
+}
+
+.drawer-price {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.summary-row span:first-child {
+  flex: 1;
+  text-align: left;
+}
+
+.summary-row span:last-child {
+  text-align: right;
+  min-width: 80px;
 }
