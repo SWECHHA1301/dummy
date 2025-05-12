@@ -111,3 +111,38 @@
 .star.filled {
   color: #f8b400;
 }
+
+
+.search-order {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 2px;
+  padding: 4px 12px;
+  width: 100%;
+  max-width: 600px;
+  background-color: #f3f7f8;
+}
+
+.search-order input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 6px 8px;
+  background-color: transparent;
+}
+
+.search-order button {
+  border: none;
+  cursor: pointer;
+  color: #2874f0; /* Flipkart blue */
+  font-size: 16px;
+  padding-left: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.search-order button i {
+  margin-right: 4px;
+}

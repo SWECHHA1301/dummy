@@ -73,8 +73,8 @@ const SimilarItem = ({ searchTerm ,title}) => {
 
   return (
     <section>
-      <div>
-        <h5>{title}</h5>
+      <div className='title'>
+        <p>{title}</p>
       </div>
      <div className="slides">
         <div className="slider">

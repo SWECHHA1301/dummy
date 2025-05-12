@@ -7,47 +7,72 @@
 }
 
 .Nav{
-    margin: 120px 0 0 50px;
+    margin: 120px 0 0 35px;
 }
 
 .itemimage2{
     width: 450px;
     height: 450px;
-    background-size: cover;
-    background-image: url('https://cdn.zeptonow.com/production/ik-seo/tr:w-1280,ar-5304-5304,pr-true,f-auto,q-80/cms/product_variant/9bc896d4-229d-45a4-8294-b36f97f5992c/Vietnamese-Cold-Coffee.jpeg');
+   
     border-radius: 14px;
     border: 1px solid rgb(218, 218, 218);
     margin: 40px 0 0 20px;
     
 }
+.itemimage2 img{
+     width: 450px;
+    height: 450px;
+    display: block;
+    border-radius: 14px;
+}
 
+.itemimage2 button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    border: 1px solid rgb(218, 218, 218);
+    color: rgb(94, 94, 94);
+    
+}
 .item{
     width: 50px;
     height: 50px;
-    border-radius: 14px;
+    border-radius: 12px;
     border: 1px solid rgb(218, 218, 218);
     margin-bottom: 25px;
+}
+
+.item img{
+     width: 50px;
+    height: 50px;
+    border-radius: 12px;
 }
 
 .imageDetail{
     display: flex;
     gap: 4px;
     
+    
 }
 
 .itemimage1{
-    margin: 40px 0 0 59px;
+    margin: 40px 0 0 40px;
 }
 
-.Product{
-    margin: 0 50px;
+
+.Product2{
+     
+    display: grid;
+     place-items: center; 
+     height: 100vh;
+    
 }
 
 .Detail{
     margin-top: 110px;
-    /* overflow-y: scroll;
+    overflow-y: scroll;
     scroll-behavior: smooth;
-    height: 600px; */
+    height: 600px;
 }
 
 
@@ -56,7 +81,7 @@
     height: 730px;
     border-radius: 14px;
     border: 1px solid rgb(218, 218, 218);
-    margin: 74px 0 25px 0;
+    margin: 74px 40px 25px 20px;
 }
 
 .AddtoCart{
@@ -66,10 +91,11 @@
     border: none;
     font-weight: bold;
     font-size: 16px;
-    margin: 20px 0 0 130px;
+    margin: 20px 0 0 115px;
     width: 450px;
     text-align: center;
     border-radius: 8px;
+
 }
 
 .DetailSec1 h3{
@@ -83,7 +109,15 @@
     width: 35px;
     height: 35px;
     margin: 20px 20px  0 0;
+    display: flex;
+    place-items: center;
+    
 } 
+
+.print svg{
+    margin-left: 7px;
+    margin-bottom: 2px;
+}
 
 .Qty{
     color:#797c8d; 
@@ -95,13 +129,14 @@
 
 .Rate{
     width:60px;
-    height:25px;
+    height:20px;
     background-color:#046d45;
     color:white;
     font-weight:bold; 
     border-radius: 6px;
-     padding: 5px 0 0 25px ;
-     margin: 0 5px;
+     margin: 0  5px;
+    text-align: center;
+    padding: 2px 0;
 }
 
 .Price{
@@ -134,7 +169,7 @@
     margin: 20px 0 0 25px ;
     border-radius:6px;
     border: 1px solid #f0f4f9;
-     display: flex ;
+    display: flex ;
 }
 
 .DetailSec2{
@@ -167,3 +202,10 @@
 .DetailSec2 td{
     padding: 10px 10px 20px 0;
 }
+
+.separation {
+    height: 2px;
+    background-color: #e4e0e0;
+    width: 97%;
+    border: none;
+  }

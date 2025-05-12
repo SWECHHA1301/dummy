@@ -52,10 +52,14 @@ const orders = [
   },
 ];
 
-const Order = () => {
+const Order = ({ searchTerm, setSearchTerm }) => {
   return (
     <div className="order-container">
-      <h2>Your Orders</h2>
+       <div class="search-order">
+  <input type="text" placeholder="Search for products, brands and more" />
+  <button><i class="fa fa-search"></i>Search Orders</button>
+</div>
+      <h1><b>Your Orders</b></h1>
       {orders.map((order) => (
         <div key={order.id} className="order-card">
           <div className="order-main">

@@ -820,3 +820,51 @@
       padding: 5px 0;
     }
   }
+
+  /* Base style already uses flex and works well on desktop */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  .navbar-left,
+  .navbar-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .nav {
+    flex-direction: row;
+    gap: 15px;
+    padding-left: 0;
+  }
+
+  .nav li {
+    flex-direction: row;
+    gap: 5px;
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 6px 20px;
+    font-size: 14px;
+  }
+
+  .logo img {
+    height: 32px;
+  }
+
+  .location label {
+    font-size: 12px;
+  }
+}

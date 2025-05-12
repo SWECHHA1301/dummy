@@ -1,9 +1,11 @@
-h5{
-    margin: 40px 0 20px 6.9%;
+.title{
+    margin: 40px 0 20px 11%;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .slides {
-   margin: 10px 87px 0 80px;
+   margin: 10px 160px 0 145px;
   }
   
   .slider {
