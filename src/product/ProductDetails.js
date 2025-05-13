@@ -1,4 +1,4 @@
-import SimilarItem from "./Component/SimilarItem/SimilarItem";
+import SimilarItems from "./components/ListItems/SimilarItems";
 import { useState } from "react";
 function ProductDetail() {
       const [searchTerm, setSearchTerm] = useState('');
@@ -436,8 +436,8 @@ return(
   
     </div></div>
 
-  <div><SimilarItem searchTerm={searchTerm} title={'Similar Product'}/></div>
-   <div><SimilarItem searchTerm={searchTerm} title={'You might also like'}/></div>
+  <div><SimilarItems searchTerm={searchTerm} title={'Similar Product'}/></div>
+   <div><SimilarItems searchTerm={searchTerm} title={'You might also like'}/></div>
    </div>
    
 </div>

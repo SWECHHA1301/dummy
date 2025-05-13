@@ -40,23 +40,26 @@
 
 
 import React, { useState } from 'react';
-// import ProfileSection from './profile/ProfileSection'
-// import Profile from './profile/Profile';
+import ProfileSection from './profile/ProfileSection'
+import Profile from './profile/Profile';
 import Navbar from './home/components/Navbar'
 import './home/components/app.css'
-// import Cart from './cart/Cart';
-// import Order from './orders/Order';
+import Cart from './cart/Cart';
+import Order from './orders/Order';
 import OrderDetails from './orders/OrderDetails';
+// import ProductDetails from './product/ProductDetails';
+import './product/Product.css'     
 function App() {  
   const [searchTerm, setSearchTerm] = useState('');
   return (
     <div className="App">
       <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-       {/* <ProfileSection />
+      <ProfileSection />
       <Profile />
       <Cart />
-      <Order searchTerm={searchTerm} setSearchTerm={setSearchTerm} /> */}
+      <Order searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <OrderDetails />
+      {/* <ProductDetails searchTerm={searchTerm}/> */}
     </div>
   );
 }
@@ -66,8 +69,6 @@ export default App;
 // import './product/Product.css'
 // import './product/components/ListItems/Item.css'
 // import ProductDetails from './product/ProductDetails';
-// // import Navbar from './zepto/Navbar'
-// // import './zepto/zepto.css'
 // function App() {  
 //   const [searchTerm, setSearchTerm] = useState('');
 //   return (

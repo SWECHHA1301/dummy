@@ -1,13 +1,21 @@
 .order-container {
-  max-width: 900px;
-  margin: 100px auto;
+  max-width: 600px;
+  margin: 80px auto 40px auto; /* Top spacing, centered horizontally */
+  padding: 20px;
   font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Optional subtle shadow */
+  width: 100%; /* Ensures responsiveness */
+  /* Prevents padding from overflowing */
 }
 
 .order-card {
   border: 1px solid #ddd;
   border-radius: 6px;
   padding: 15px;
+  margin-top: 10px;
   margin-bottom: 20px;
   background-color: #fff;
 }
@@ -23,6 +31,7 @@
   gap: 16px;
   flex: 1;
   align-items: flex-start;
+   border: none !important;
 }
 
 .order-info {
@@ -38,7 +47,7 @@
   width: 60px;
   height: 100px;
   object-fit: cover;
-  border: 1px solid #eee;
+  /* border: 1px solid #eee; */
   flex-shrink: 0; /* ⬅ Prevent image from shrinking */
 }
 
@@ -122,6 +131,7 @@
   width: 100%;
   max-width: 600px;
   background-color: #f3f7f8;
+  margin-bottom: 10px;
 }
 
 .search-order input {
