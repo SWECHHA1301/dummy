@@ -5,25 +5,25 @@
   min-height: 100vh;
    width: 100%;
   max-width: 600px;
-  margin:  auto;
+  margin: auto;
 }
 
 .profile-avatar-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .profile-avatar-image {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 60px;
   border-radius: 50%;
   border: 2px solid #ccc;
   object-fit: cover;
 }
 
 .profile-form .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .profile-form label {
@@ -65,7 +65,7 @@
 }
 
 .delete-section {
-  margin-top: 32px;
+  margin-top: 26px;
 }
 
 .btn-delete {

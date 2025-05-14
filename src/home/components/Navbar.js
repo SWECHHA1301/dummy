@@ -1,6 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
+import Cart from '../../cart/Cart';
+import ProfileSection from '../../profile/ProfileSection';
 
  function Navbar({ searchTerm, setSearchTerm }) {
+  const [selectedTab, setSelectedTab] = useState('');
+  
   return (
     <>
 <div>
@@ -30,14 +34,17 @@ import React from 'react'
     <div className="nav">
       <ul>
 
-        <li><i className="fa-regular fa-circle-user" style={{color: "#0d0d0c"}}></i>
+        <li onClick={() => setSelectedTab('ProfileSection')}><i className="fa-regular fa-circle-user" style={{color: "#0d0d0c"}}></i>
           <span><a href="/ProfileSection.jsx">Login</a></span>
         </li>
-        <li><i className="fa fa-cart-plus" aria-hidden="true" style={{color: "#0d0d0c"}}></i>
-          <span><a href="/cart.js">Cart</a></span>
+        <li onClick={() => setSelectedTab('Cart')}><i className="fa fa-cart-plus" aria-hidden="true" style={{color: "#0d0d0c"}}></i>
+          <span>Cart</span>
         </li>
+        
+      </ul> 
 
-      </ul>
+      {/* {selectedTab === 'Cart' && <Cart />}
+      {selectedTab === 'ProfileSection' && <ProfileSection />} */}
     </div>
   </header>
 </div>

@@ -1,40 +1,42 @@
-.Nav span a{
- text-decoration: none;
- color:black;
- padding: 0 10px;
- font-size: 12px;
- letter-spacing: 1px;
+.Nav span a {
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
 
-.Nav{
+.Nav {
     margin: 120px 0 0 35px;
 }
 
-.itemimage2{
+.itemimage2 {
     width: 450px;
     height: 450px;
-   
+
     border-radius: 14px;
     border: 1px solid rgb(218, 218, 218);
     margin: 40px 0 0 20px;
-    
+
 }
-.itemimage2 img{
-     width: 450px;
+
+.itemimage2 img {
+    width: 450px;
     height: 450px;
     display: block;
     border-radius: 14px;
 }
 
-.itemimage2 button{
+.itemimage2 button {
     width: 35px;
     height: 35px;
     border-radius: 50px;
     border: 1px solid rgb(218, 218, 218);
     color: rgb(94, 94, 94);
-    
+
 }
-.item{
+
+.item {
     width: 50px;
     height: 50px;
     border-radius: 12px;
@@ -42,33 +44,42 @@
     margin-bottom: 25px;
 }
 
-.item img{
-     width: 50px;
+.selectedItem {
+    border-width: 2px;
+    border-color: #fa3778;
+}
+
+.item img {
+    width: 50px;
     height: 50px;
     border-radius: 12px;
 }
 
-.imageDetail{
+.imageDetail {
     display: flex;
     gap: 4px;
-    
-    
+
+
 }
 
-.itemimage1{
+.itemimage1 {
     margin: 40px 0 0 40px;
 }
 
-
-.Product2{
-     
-    display: grid;
-     place-items: center; 
-     height: 100vh;
-    
+.itemimage1:hover{
+    cursor: pointer;
 }
 
-.Detail{
+
+.Product2 {
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+}
+
+.Detail {
     margin-top: 110px;
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -76,7 +87,7 @@
 }
 
 
-.DetailSec1{
+.DetailSec1 {
     width: 500px;
     height: 730px;
     border-radius: 14px;
@@ -84,10 +95,10 @@
     margin: 74px 40px 25px 20px;
 }
 
-.AddtoCart{
+.AddtoCart {
     padding: 14px 80px;
-    background-color:  #fa3778;
-    color:white;
+    background-color: #fa3778;
+    color: white;
     border: none;
     font-weight: bold;
     font-size: 16px;
@@ -98,81 +109,81 @@
 
 }
 
-.DetailSec1 h3{
+.DetailSec1 h3 {
     margin: 25px 0 0 20px;
 }
 
 
-.print{
+.print {
     border-radius: 50px;
     border: 1px solid rgb(218, 218, 218);
     width: 35px;
     height: 35px;
-    margin: 20px 20px  0 0;
+    margin: 20px 20px 0 0;
     display: flex;
     place-items: center;
-    
-} 
 
-.print svg{
+}
+
+.print svg {
     margin-left: 7px;
     margin-bottom: 2px;
 }
 
-.Qty{
-    color:#797c8d; 
+.Qty {
+    color: #797c8d;
     margin: 10px 0 0 20px;
     font-size: 14px;
-     letter-spacing: 1px;
-     display:flex;
+    letter-spacing: 1px;
+    display: flex;
 }
 
-.Rate{
-    width:60px;
-    height:20px;
-    background-color:#046d45;
-    color:white;
-    font-weight:bold; 
+.Rate {
+    width: 60px;
+    height: 20px;
+    background-color: #046d45;
+    color: white;
+    font-weight: bold;
     border-radius: 6px;
-     margin: 0  5px;
+    margin: 0 5px;
     text-align: center;
     padding: 2px 0;
 }
 
-.Price{
-    display:flex; 
+.Price {
+    display: flex;
     align-items: center;
 }
 
-.Price h3{
+.Price h3 {
     margin: 10px 0 0 20px;
-     font-size:25px;
+    font-size: 25px;
 }
 
-.Price p{
+.Price p {
     color: #046d45;
-     margin: 12px 0 0 6px ;
-    font-size: 15px ;
+    margin: 12px 0 0 6px;
+    font-size: 15px;
     font-weight: bold;
 }
 
-.mrp{
-    color: #797c8d ;
-     margin: 5px 0 0 25px ; 
-     font-size: 14px;
+.mrp {
+    color: #797c8d;
+    margin: 5px 0 0 25px;
+    font-size: 14px;
 }
 
-.CouponOffer{
-    width: 450px ;
-    height: 60px; 
-    background-color: #f9f9fd ;
-    margin: 20px 0 0 25px ;
-    border-radius:6px;
+.CouponOffer {
+    width: 450px;
+    height: 60px;
+    background-color: #f9f9fd;
+    margin: 20px 0 0 25px;
+    border-radius: 6px;
     border: 1px solid #f0f4f9;
-    display: flex ;
+    display: flex;
 }
 
-.DetailSec2{
+.DetailSec2 {
     width: 500px;
     height: 650px;
     border-radius: 14px;
@@ -184,22 +195,22 @@
     margin: 20px 0 25px 20px;
 }
 
-.DetailSec2 table tr :nth-last-of-type(2){
-    color:#797c8d; 
+.DetailSec2 table tr :nth-last-of-type(2) {
+    color: #797c8d;
     width: 200px;
 }
 
-.DetailSec2 table tr :nth-last-of-type(){
-    color:#797c8d; 
-    
+.DetailSec2 table tr :nth-last-of-type() {
+    color: #797c8d;
+
 }
 
-.DetailSec2 table{
+.DetailSec2 table {
     font-size: 14px;
-    margin:0 20px 0 20px;
+    margin: 0 20px 0 20px;
 }
 
-.DetailSec2 td{
+.DetailSec2 td {
     padding: 10px 10px 20px 0;
 }
 
@@ -208,4 +219,4 @@
     background-color: #e4e0e0;
     width: 97%;
     border: none;
-  }
+}
