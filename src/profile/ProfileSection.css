@@ -1,17 +1,39 @@
+
 .main-container {
   display: flex;
-  align-items: stretch; /* This ensures both child sections match in height */
+  align-items: stretch;
   gap: 20px;
-  max-width: 800px;
-  margin: 100px auto;
-  height: 700px; /* This ensures the container takes full height */
+  max-width: 1100px;
+  margin: 90px auto;
+  height: 700px;
+  font-family: 'Arial', sans-serif;
 }
 
+.profile-container {
+  flex: 1;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.right-section {
+  flex: 2;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
 
 .profile-header {
   display: flex;
   align-items: center;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .profile-avatar {
@@ -24,13 +46,13 @@
 .profile-info h2 {
   margin: 0;
   font-size: 18px;
-  color: #333;
+  color: #222;
 }
 
 .profile-info p {
   margin: 4px 0 0;
   font-size: 14px;
-  color: #888;
+  color: #777;
 }
 
 .zepto-cash-card {
@@ -39,7 +61,6 @@
   border-radius: 10px;
   padding: 15px;
   margin-bottom: 15px;
-  font-family: 'Arial', sans-serif;
 }
 
 .zepto-card-title-row {
@@ -101,33 +122,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: Arial, sans-serif;
 }
 
-.free-cash-label {
-  font-size: 14px;
-  font-weight: bold;
-  color: #4c1577;
-}
-
+.free-cash-label,
 .free-cash-amount {
   font-size: 14px;
   font-weight: bold;
   color: #4c1577;
 }
 
-/* Options */
 .profile-options {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 12px;
+  margin-top: 20px;
 }
 
 .option-item {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-size: 16px;
+  gap: 10px;
+  font-size: 15px;
   color: #333;
   cursor: pointer;
   transition: background 0.2s ease;
@@ -136,7 +151,7 @@
 }
 
 .option-item:hover {
-  background-color: #f9f9f9;
+  background-color: #f5f5f5;
 }
 
 .option-item img {
@@ -150,80 +165,15 @@
   font-weight: bold;
 }
 
-.orders-header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 600;
-  font-size: 14px;
-  color: #333;
-  margin-bottom: 40px;
-}
-
-.orders-content {
-  text-align: center;
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; /* This centers vertically */
-  height: 100%; /* Ensure it fills the available height */
-  text-align: center;
-}
-
-.no-orders-img {
-  width: 80px;
-  margin-bottom: 20px;
-  
-}
-
-.browse-btn {
-  margin-top: 10px;
-  padding: 10px 20px;
-  border: 1px solid #800080;
-  border-radius: 8px;
-  background-color: transparent;
-  color: #800080;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.profile-container,
-.orders-section {
-  flex: 1;
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  
-}
-
-.profile-container {
-  width: 600px;
-  min-height: 100vh;
-
-}
-
-.orders-section {
-  flex: 2; 
-}
-
 @media (max-width: 768px) {
   .main-container {
     flex-direction: column;
+    height: auto;
   }
 
   .profile-container,
-  .order-container {
+  .right-section {
     width: 100%;
     min-height: auto;
   }
 }
-
-  
-  
-
-  
-  

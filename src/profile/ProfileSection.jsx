@@ -4,6 +4,8 @@ import Orders from './components/Orders'; // No orders component
 import OrderList from './components/Order'; // Component that shows order list
 import CustomerSupport from './components/CustomerSupport';
 import Profile from "./components/Profile";
+import AddressForm from './components/AddressForm';
+
 
 
 const orders = [
@@ -63,15 +65,7 @@ const ProfileSection = () => {
             <img src="https://img.icons8.com/?size=100&id=3686&format=png&color=000000" alt="orders" />
             <span>Orders</span>
           </div>
-          <div onClick={() => setSelectedTab('customer-support')} className="option-item">
-            <img src="https://img.icons8.com/?size=100&id=d7iUgF8ZrDaO&format=png&color=000000" alt="customersupport" />
-            <span>Customer Support</span>
-          </div>
-          <div className="option-item">
-            <i className="fa-regular fa-heart" style={{ color: "#0d0d0c" }}></i>
-            <span>Manage Referrals</span>
-          </div>
-          <div onClick={() => setSelectedTab('address')} className="option-item">
+          <div onClick={() => setSelectedTab('AddressForm')} className="option-item">
             <img src="https://img.icons8.com/?size=100&id=53383&format=png&color=000000" alt="Address" />
             <span>Addresses</span>
           </div>
@@ -85,12 +79,13 @@ const ProfileSection = () => {
         </div>
       </div>
 
-      {/* Right Content Section */}
+      <div className="right-section">
       {selectedTab === 'orders' && (
         orders.length > 0 ? <OrderList orders={orders} /> : <Orders />
       )}
-      {selectedTab === 'customer-support' && <CustomerSupport />}
+      {selectedTab === 'AddressForm' && <AddressForm />}
       {selectedTab === 'profile' && <Profile />}
+    </div>
     </div>
   );
 };

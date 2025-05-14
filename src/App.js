@@ -42,16 +42,20 @@ import Navbar from "./home/components/Navbar";
 import "./home/components/app.css";
 import Cart from "./cart/Cart";
 import OrderDetails from "./orders/OrderDetails";
+import LocationAlert from "./profile/components/LocationAlert";
+import AddressForm from "./profile/components/AddressForm";
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
   return (
     <div className="App">
       <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <ProfileSection />
+      {/* <AddressForm /> */}
       {/* <Profile /> */}
       {/* <Cart /> */}
       {/* <Order searchTerm={searchTerm} setSearchTerm={setSearchTerm} /> */}
       {/* <OrderDetails /> */}
+      /
     </div>
   );
 }
