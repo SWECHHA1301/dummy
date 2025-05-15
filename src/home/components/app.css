@@ -1,14 +1,13 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
-  body {
-    background-color: white;
-    overflow-y: scroll;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+}
   
   header {
     display: flex;
@@ -119,10 +118,24 @@
     padding-left: 30px;
   }
   
-  .main {
-     margin: 85.4px 40px 0 35px;
-     width: 94.8%;
-  } 
+.main {
+  width: 100vw;        
+  margin-top: 90px;         
+  padding-left: 10px;
+  overflow: hidden;
+  line-height: 0;     
+}
+
+.main img {
+  width: 98%;
+  height: auto;
+  display: block;  
+  object-fit: cover;
+  border-radius: 0; 
+}
+
+
+ 
   
   /* coffee */
   .Coff {
@@ -824,6 +837,10 @@
   /* Base style already uses flex and works well on desktop */
 
 @media (max-width: 768px) {
+   .main img {
+    border-radius: 0; /* Remove rounded corners on small screens */
+  }
+
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -868,3 +885,5 @@
     font-size: 12px;
   }
 }
+
+

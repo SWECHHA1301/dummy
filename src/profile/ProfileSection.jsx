@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import "./ProfileSection.css";
 import Orders from './components/Orders'; // No orders component
 import OrderList from './components/Order'; // Component that shows order list
-import CustomerSupport from './components/CustomerSupport';
 import Profile from "./components/Profile";
 import AddressForm from './components/AddressForm';
 

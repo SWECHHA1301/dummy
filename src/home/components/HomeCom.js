@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.css';
 
 const productsData = [
   {
@@ -59,7 +60,7 @@ const productsData = [
   },
 ];
 
-function Home() {
+function HomeCom() {
   const [searchTerm, setSearchTerm] = useState('');
 
   const filteredProducts = productsData.filter((product) =>
@@ -119,4 +120,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomeCom;

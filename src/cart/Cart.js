@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Cart.css';
 import { FiShoppingCart } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 
 const Cart = () => {
