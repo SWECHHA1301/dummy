@@ -75,6 +75,7 @@ const ProfileSection = () => {
           <div className="option-item logout">
             <span>Logout</span>
           </div>
+          
         </div>
       </div>
 

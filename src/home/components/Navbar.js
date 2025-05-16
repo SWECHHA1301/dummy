@@ -31,15 +31,13 @@ function Navbar({ searchTerm, setSearchTerm }) {
           </div>
 
           <div className="search-bar">
+            <i className="fa fa-search" aria-hidden="true"></i>
             <input
               type="text"
               placeholder="Search for products"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
-            <button type="submit">
-              <i className="fa fa-search" aria-hidden="true"></i>
-            </button>
           </div>
 
           <div className="nav">
