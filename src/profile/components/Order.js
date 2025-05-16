@@ -1,126 +1,48 @@
 import React from "react";
-import "./Order.css";
-import { FaStar, FaRegStar } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
-const orders = [
-  {
-    id: 1,
-    title: "Hachiko Scissor Nail Clipper",
-    price: "₹265",
-    status: "Cancelled",
-    statusColor: "red",
-    date: "May 04",
-    reason: "As per your request, your item has been cancelled.",
-    image:
-      "https://rukminim2.flixcart.com/image/200/200/xif0q/pet-nail-clipper/m/2/z/best-quality-combo-of-2-dog-product-nail-claipper-hair-flea-comb-original-imagh4wzhypysthz.jpeg?q=90",
-    rating: 3,
-  },
-  {
-    id: 2,
-    title: "VBEAUTI Boyfriend Women Blue Jeans",
-    price: "₹838",
-    status: "Refund Completed",
-    statusColor: "orange",
-    reason: "You returned this order because you did not like the fit.",
-    refundNote:
-      "The money was sent to your STATE BANK OF INDIA Account ending with ********033 on May 06 11:18 PM. For any questions, please contact your bank with reference number 512423855654.",
-    refundId: "12303431438106732421",
-    image:
-      "https://rukminim2.flixcart.com/image/200/200/xif0q/jean/i/a/a/44-1205-new-vbeauti-original-imah9mdxuyykznus.jpeg?q=90",
-    rating: 4,
-  },
-  {
-    id: 3,
-    title: "DENIM DIVA Women Cargos",
-    price: "₹654",
-    status: "Refund Completed",
-    statusColor: "orange",
-    reason: "You returned this order because you don't want the item anymore.",
-    refundNote:
-      "The money was sent to your STATE BANK OF INDIA Account ending with ********033 on Apr 30 12:14 PM. For any questions, please contact your bank with reference number 511912951512.",
-    refundId: "1210342707736000635",
-    image:
-      "https://rukminim2.flixcart.com/image/200/200/xif0q/jean/h/u/p/28-6pkt-grey-a-nucouths-original-imahfvfuyzxxdwdf.jpeg?q=90",
-    rating: 5,
-  },
-  {
-    id: 4,
-    title: "TUSI Casual Solid Women White, Black Top",
-    price: "₹202",
-    status: "Delivered on Apr 30",
-    statusColor: "green",
-    reason: "Your item has been delivered.",
-    image:
-      "https://rukminim1.flixcart.com/image/100/80/xif0q/top/0/m/l/xl-1-tusi-tank-top-pink-tusi-original-imagudrjzrpk9tyt.jpeg?q=100",
-    rating: 5,
-  },
-];
+const Order = () => {
+  const navigate = useNavigate();
 
-const OrderList = ({ searchTerm, setSearchTerm }) => {
+  const handleOrderClick = () => {
+    navigate("/order-details");
+  };
+
   return (
-    <div className="order-container">
-      <div class="search-order">
-        <input type="text" placeholder="Search for products, brands and more" />
-        <button>
-          <i class="fa fa-search"></i>Search Orders
-        </button>
-      </div>
-      {orders.map((order) => (
-        <div key={order.id} className="order-card">
-          <div className="order-main">
-            {/* LEFT SIDE */}
-            <div className="order-left">
-              <img src={order.image} alt={order.title} />
-              <div className="order-info">
-                <div className="order-title">{order.title}</div>
-                <div className="order-price">{order.price}</div>
-                <div className="star-rating">
-                  {[...Array(5)].map((_, index) =>
-                    index < order.rating ? (
-                      <FaStar key={index} className="star filled" />
-                    ) : (
-                      <FaRegStar key={index} className="star" />
-                    )
-                  )}
-                </div>
-              </div>
-            </div>
+    <div className="min-h-screen bg-gray-50 p-4">
+      <h2 className="text-xl font-semibold mb-4 px-2">Orders</h2>
 
-            {/* RIGHT SIDE */}
-            <div className="order-right">
-              <div className="order-status">
-                <span
-                  className="status-dot"
-                  style={{ backgroundColor: order.statusColor }}
-                ></span>
-                <strong>{order.status}</strong>
-                {order.date && (
-                  <span>
-                    {" "}
-                    on <strong>{order.date}</strong>
-                  </span>
-                )}
-              </div>
-              <p className="order-reason">{order.reason}</p>
-              <br />
-              <hr />
-              {order.refundNote && (
-                <div className="refund-box">
-                  <p className="refund-title">
-                    Refund Completed{" "}
-                    <small>(Refund ID: {order.refundId})</small>
-                  </p>
-                  <ul>
-                    <li>{order.refundNote}</li>
-                  </ul>
-                </div>
-              )}
-            </div>
+      <div
+        className="bg-white rounded-2xl shadow-sm p-4 flex items-start justify-between cursor-pointer"
+        onClick={handleOrderClick}
+      >
+        {/* Left section */}
+        <div>
+          <div className="flex space-x-2 mb-2">
+            <img
+              src="https://cdn.zeptonow.com/production/tr:w-100,ar-1200-1200,pr-true,f-auto,q-80/cms/product_variant/af9cd97a-f820-487d-a47c-4f568c3f647f.jpeg"
+              alt="Product"
+              className="w-14 h-14 object-cover rounded-xl border"
+            />
+          </div>
+          <div>
+            <p className="font-semibold text-sm">
+              Order delivered <span className="text-green-600">✔</span>
+            </p>
+            <p className="text-xs text-gray-500">
+              Placed at 12th Aug 2024, 08:14 pm
+            </p>
           </div>
         </div>
-      ))}
+
+        <div className="text-right font-semibold text-black whitespace-nowrap">
+          ₹1226.47 <span className="text-gray-400 ml-1">›</span>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default OrderList;
+export default Order;
+
+

@@ -95,7 +95,7 @@ body, html {
     padding-left: 30px;
   }
   
-  .nav ul li {
+  .nav ul li,.navSideButton {
     display: flex;
     flex-direction: column;
     align-items: center;

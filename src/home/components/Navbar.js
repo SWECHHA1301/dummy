@@ -1,19 +1,25 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import "./App.css";
+import React from "react";
+import { Link } from "react-router-dom";
+import "./app.css";
 
 function Navbar({ searchTerm, setSearchTerm }) {
   return (
     <>
       <div>
         <header>
-          <div className="logo">
-            <img src="https://cdn.zeptonow.com/web-static-assets-prod/artifacts/12.72.2/images/header/primary-logo.svg" alt="logo" />
-          </div>
+          <Link to={"/"} className="logo">
+            <img
+              src="https://cdn.zeptonow.com/web-static-assets-prod/artifacts/12.72.2/images/header/primary-logo.svg"
+              alt="logo"
+            />
+          </Link>
 
           <div className="ss">
             <button className="btn">
-              <img src="https://cdn.zeptonow.com/web-static-assets-prod/ar….72.2/images/super-saver/super-saver-inactive.svg" alt="super saver" />
+              <img
+                src="https://cdn.zeptonow.com/web-static-assets-prod/ar….72.2/images/super-saver/super-saver-inactive.svg"
+                alt="super saver"
+              />
             </button>
           </div>
 
@@ -31,18 +37,31 @@ function Navbar({ searchTerm, setSearchTerm }) {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
-            <button type="submit"><i className="fa fa-search" aria-hidden="true"></i></button>
+            <button type="submit">
+              <i className="fa fa-search" aria-hidden="true"></i>
+            </button>
           </div>
 
           <div className="nav">
             <ul>
               <li>
-                <i className="fa-regular fa-circle-user" style={{ color: "#0d0d0c" }}></i>
-                <span><Link to="/profile">Login</Link></span>
+                <Link className="navSideButton" to="/profile">
+                  <i
+                    className="fa-regular fa-circle-user"
+                    style={{ color: "#0d0d0c" }}
+                  ></i>
+                  <span>Login</span>
+                </Link>
               </li>
               <li>
-                <i className="fa fa-cart-plus" aria-hidden="true" style={{ color: "#0d0d0c" }}></i>
-                <span><Link to="/cart">Cart</Link></span>
+                <Link className="navSideButton" to="/cart">
+                  <i
+                    className="fa fa-cart-plus"
+                    aria-hidden="true"
+                    style={{ color: "#0d0d0c" }}
+                  ></i>
+                  <span>Cart</span>
+                </Link>
               </li>
             </ul>
           </div>
@@ -53,4 +72,3 @@ function Navbar({ searchTerm, setSearchTerm }) {
 }
 
 export default Navbar;
-
