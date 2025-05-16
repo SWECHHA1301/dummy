@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './LoginForm.css'; // Import your CSS file
 
 const LoginForm = () => {
   const [phone, setPhone] = useState('');
@@ -37,16 +38,9 @@ const LoginForm = () => {
         />
         <p  style={{ color: '#4C1577' }}>Order faster & easier every time</p>
         <p style={{color:'grey'}}>with the Zepto App</p>
-        <div className="app-links">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-            alt="Google Play"
-          />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/2/29/Available_on_the_App_Store_%28black%29_PNG.png"
-            alt="App Store"
-          />
-        </div>
+       <div class="app-links">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" />
+       </div>
       </div>
     </div>
   );

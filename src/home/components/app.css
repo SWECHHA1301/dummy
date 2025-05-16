@@ -121,7 +121,7 @@ body, html {
 .main {
   width: 100vw;        
   margin-top: 90px;         
-  padding-left: 10px;
+  padding: 0 46px 0 54px;
   overflow: hidden;
   line-height: 0;     
 }
