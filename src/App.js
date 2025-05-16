@@ -7,6 +7,7 @@ import Cart from "./cart/Cart";
 import ProductDetails from "./product/ProductDetails";
 import Order from './profile/components/Order';
 import OrderDetails from './orders/OrderDetails';
+import SearchPage from "./home/components/SearchPage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/product/:productId" element={<ProductDetails />} />
         <Route path="/orders" element={<Order />} />                  
         <Route path="/order-details" element={<OrderDetails />} />
+        <Route path="/search-bar" element={<SearchPage />} />
       </Routes>
     </Router>
   );
@@ -27,16 +29,3 @@ function App() {
 export default App;
 
 
-// import React from 'react';
-// import OrderDetails from './orders/OrderDetails';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <OrderDetails />
-//       {/* You can add other components or routes here */}
-//     </div>
-//   );
-// }
-
-// export default App;

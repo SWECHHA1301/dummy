@@ -30,7 +30,7 @@ function Navbar({ searchTerm, setSearchTerm }) {
             </select>
           </div>
 
-          <div className="search-bar">
+          <Link to={"/search-bar"} className="search-bar">
             <i className="fa fa-search" aria-hidden="true"></i>
             <input
               type="text"
@@ -38,7 +38,7 @@ function Navbar({ searchTerm, setSearchTerm }) {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
-          </div>
+          </Link>
 
           <div className="nav">
             <ul>
@@ -70,3 +70,4 @@ function Navbar({ searchTerm, setSearchTerm }) {
 }
 
 export default Navbar;
+

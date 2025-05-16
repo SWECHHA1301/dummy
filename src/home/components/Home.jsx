@@ -14,6 +14,7 @@ import Footer from './Footer';
 
 function Home() {
   const [searchTerm, setSearchTerm] = useState('');
+  
   return (
     <div className="content-wrapper">
       <Main />
