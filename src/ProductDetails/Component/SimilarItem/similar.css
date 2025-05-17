@@ -1,11 +1,11 @@
 .title{
-    margin: 40px 0 20px 11%;
+    margin: 40px 0 20px 0;
     font-size: 18px;
     font-weight: bold;
 }
 
 .slides {
-   margin: 10px 160px 0 145px;
+   margin: 10px 0 0 0;
   }
   
   .slider {
@@ -62,7 +62,7 @@
     font-size: 10px;
   }
   
-  button {
+  .Cart {
     color: #ff007f;
     border: 1px solid #ff007f;
     background-color: #fff;

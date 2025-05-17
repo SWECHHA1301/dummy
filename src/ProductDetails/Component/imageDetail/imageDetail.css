@@ -1,0 +1,130 @@
+.Nav span a{
+ text-decoration: none;
+ color:black;
+ font-size: 12px;
+ letter-spacing: 1px;
+}
+
+.Nav{
+    margin: 120px 0 30px 4px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.Nav span{
+    display: flex;
+    
+}
+
+.imageDetail{
+   display: flex;
+   gap: 1.25rem;
+
+
+}
+
+.item{
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid rgb(218, 218, 218);
+    margin-bottom: 20px;
+    
+}
+
+.item img{
+     width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+.AddtoCart{
+display: flex;
+overflow: hidden;
+ height: 3rem;
+ border-radius: 10px;
+ border:1px solid #ef4372;
+ background-color: #ef4372;
+ color:white;
+ letter-spacing: .1px;
+ line-height: 1.25rem;
+ font-weight: bold;
+ padding: 0.75rem 1rem;
+ width: 100%;
+ overflow: hidden;
+ justify-content: center;
+ align-items: center;
+ font-size: 14px;
+}
+
+.AddtoCart button{
+    cursor: pointer;
+   width: 100%;
+
+}
+
+
+
+.selectedItem {
+    border-width: 2px;
+    border-color: rgb(46, 46, 46);
+}
+
+.itemimage2{
+    width:470px;
+    height:470px;
+    overflow: hidden;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 1rem;
+  
+}
+
+.itemimageOne{
+    width:100%;
+    height: 100%;
+    position: relative;
+    /* overflow-x: scroll; */
+    display: flex;
+    /* scroll-snap-align: center; */
+}
+
+.itemimageOne img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    color: transparent;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.Image-btn{
+position: absolute;
+align-items: center;
+display: flex;
+gap:0.65rem;
+right:0.75rem;
+bottom:0.75rem;
+}
+
+.Image-btn button{
+    border-radius: 50px;
+    border: 1px solid rgb(218, 218, 218);
+    width:1.75rem;
+    height: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgb(54, 54, 54);
+}
+
+.image-collection{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    overflow-y: hidden;
+   align-self: flex-start;
+    width: 100%;
+}

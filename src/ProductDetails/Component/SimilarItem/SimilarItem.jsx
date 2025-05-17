@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './similar.css'
 const similarItems = [
   {
     name: "Vietnamese Cold Coffee",
@@ -86,7 +86,7 @@ const SimilarItem = ({ searchTerm ,title}) => {
               <p className="price">
                 ₹{item.price} <del>₹{item.originalPrice}</del>
               </p>
-              <button>Add to cart</button>
+              <button className='Cart'>Add to cart</button>
             </div>
           ))}
         </div>
