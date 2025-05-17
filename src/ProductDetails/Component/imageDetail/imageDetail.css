@@ -118,6 +118,7 @@ bottom:0.75rem;
     justify-content: center;
     cursor: pointer;
     color: rgb(54, 54, 54);
+    background-color: whitesmoke;
 }
 
 .image-collection{

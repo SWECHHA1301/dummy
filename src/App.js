@@ -29,11 +29,12 @@
 // export default App;
 
 import React from 'react'
-
+import ProductDetail from "./ProductDetails/ProductDetail";
+import './ProductDetails/product.css'
 export default function App() {
   return (
     <div>
-      
+    <ProductDetail/> 
     </div>
   )
 }
