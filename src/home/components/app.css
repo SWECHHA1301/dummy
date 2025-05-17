@@ -68,7 +68,7 @@ body, html {
 .search-bar input {
   border: none;
   outline: none;
-  padding-left: 10px;
+  padding-left: 24px;
   font-size: 14px;
   width: 100%;
 }
