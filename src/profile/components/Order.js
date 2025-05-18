@@ -5,7 +5,7 @@ const Order = () => {
   const navigate = useNavigate();
 
   const handleOrderClick = () => {
-    navigate("/order-details");
+    navigate("/profile/order/orderId");
   };
 
   return (
@@ -44,5 +44,3 @@ const Order = () => {
 };
 
 export default Order;
-
-
