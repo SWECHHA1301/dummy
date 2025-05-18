@@ -7,7 +7,6 @@
   padding: 10px;
 }
 
-/* Container becomes column on small screens */
 .login-wrapper {
   display: flex;
   flex-direction: row;
@@ -19,7 +18,6 @@
   background-color: white;
 }
 
-/* Left Panel */
 .login-left {
   width: 60%;
   background-image: url('leftLogin.svg');
@@ -45,7 +43,6 @@
   line-height: 1.4;
 }
 
-/* Phone input + country code */
 .loginNum {
   display: flex;
   align-items: center;
@@ -74,7 +71,6 @@
   background-color: white;
 }
 
-/* Continue Button */
 .login-left button {
   width: 100%;
   height: 48px;
@@ -99,7 +95,6 @@
   text-decoration: none;
 }
 
-/* Right Panel */
 .login-right {
   width: 40%;
   background-image: url('https://cdn.zeptonow.com/web-static-assets-prod/artifacts/12.68.0/_next/static/media/bg-desktop.7efcec3a.png');
@@ -133,21 +128,19 @@
 
 .app-links {
   display: flex;
-  justify-content: center;  /* Center the row */
+  justify-content: center;  
   align-items: center;
-  gap: 16px;                 /* Space between buttons */
+  gap: 16px;                 
   margin-top: 20px;
-  flex-wrap: wrap;          /* Allow wrap on small screens */
+  flex-wrap: wrap;         
 }
 
 .app-links img {
-  width: 140px;             /* Equal size */
+  width: 140px;            
   height: auto;
   object-fit: contain;
 }
 
-
-/* --- Responsive --- */
 @media (max-width: 768px) {
   .login-wrapper {
     flex-direction: column;

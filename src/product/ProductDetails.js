@@ -18,7 +18,6 @@ function ProductDetail() {
   };
 
   const nextSlide = () => {
-    // setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
     setCurrentIndex(currentIndex === images.length - 1 ? 0 : currentIndex + 1);
   };
 
@@ -30,7 +29,7 @@ function ProductDetail() {
             <div>
               <div className="Nav">
                 <span>
-                  <a href="https://www.zeptonow.com/">Home</a>
+                  <a href="|#">Home</a>
                   <svg
                     fill="none"
                     height="16"

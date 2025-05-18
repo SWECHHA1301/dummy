@@ -1,12 +1,4 @@
-.login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: rgba(126, 126, 126, 0.527);
-}
-  
-  .login-right{
+ .login-right{
     background-image: url('https://cdn.zeptonow.com/web-static-assets-prod/artifacts/12.68.0/_next/static/media/bg-desktop.7efcec3a.png');
     background-color: white;
     background-repeat: no-repeat;
