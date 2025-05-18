@@ -4,7 +4,7 @@ import OrderList from './components/Order';
 import Profile from "./components/Profile";
 import AddressForm from './components/AddressForm';
 import ProfileContainer from './ProfileContainer';
-import { useParams } from 'react-router';
+import { useNavigate, useParams } from 'react-router';
 import OrderDetails from '../orders/OrderDetails';
 
 const orders = [
@@ -25,10 +25,15 @@ const orders = [
 const ProfileSection = () => {
   const { orderId, subMenu } = useParams()
   const [selectedTab, setSelectedTab] = useState('orders');
+  const navigate = useNavigate();
 
   useEffect(() => {
+    const expectedTabs = ["orders", "addresses", "profile-details"];
+    if ((!orderId && !subMenu) || !expectedTabs.includes(subMenu)) {
+      navigate('/profile/orders')
+    }
     setSelectedTab(subMenu)
-  }, [subMenu])
+  }, [subMenu, orderId, navigate])
 
 
   return (
