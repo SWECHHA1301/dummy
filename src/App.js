@@ -16,8 +16,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/profile/:subMenu" element={<ProfileSection />} />
-        <Route path="/profile/*" element={<ProfileSection />} />
         <Route path="/profile/order/:orderId" element={<ProfileSection />} />
+        <Route path="/profile/*" element={<ProfileSection />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/product/:productId" element={<ProductDetail />} />
         <Route path="/orders" element={<Order />} />

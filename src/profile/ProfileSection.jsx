@@ -29,7 +29,7 @@ const ProfileSection = () => {
 
   useEffect(() => {
     const expectedTabs = ["orders", "addresses", "profile-details"];
-    if ((!orderId && !subMenu) || !expectedTabs.includes(subMenu)) {
+    if ((!orderId && !subMenu) || (!expectedTabs.includes(subMenu) && !orderId)) {
       navigate('/profile/orders')
     }
     setSelectedTab(subMenu)
