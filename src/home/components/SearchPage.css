@@ -1,8 +1,8 @@
-
 .search-page {
   padding: 30px;
   margin: 60px auto;
 }
+
 
 .recent-tag {
   background: #eee;
@@ -11,6 +11,7 @@
   border-radius: 20px;
   margin: 10px 0;
   font-size: 14px;
+  margin-left: 10px;
 }
 
 .banner img{
@@ -20,4 +21,109 @@
   object-fit: cover;
   border-radius: 0;
   margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.Item-Sec{
+  position: relative;
+    cursor: pointer;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    max-width: 300px;
+    
+    border: 1px solid #e6e8ed;
+    overflow: hidden;
+}
+
+.Item-Sec button{
+  padding: 0.25rem;
+  border-radius: 6px;
+  z-index: 10;
+  top: 0.5rem;
+  right: 0.5rem;
+  position: absolute;
+  cursor: pointer;
+  border: 1px solid rgb(255, 50, 105);
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.Item-Sec img{
+width:100%;
+color: transparent;
+object-fit: contain;
+padding: 1.175rem;
+border-radius: 0.75rem;
+overflow: hidden;
+aspect-ratio: 1/1;
+position: relative;
+}
+
+.Cover {
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  display: flex;
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3); /* Better for dark overlay */
+}
+
+.Left-Side{
+  width: 50%;
+}
+.Left-Side h6{
+ text-overflow: ellipsis ;
+ overflow: hidden;
+white-space: nowrap;
+margin: 0;
+color: #fcffff;
+font-size: 12px;
+}
+
+.Left-Side p{
+color: hsla(0,0%,100%,.8);
+margin: 0;
+font-size: 10px;
+font-weight: 400;
+color: #fcffff;
+}
+
+.Right-Side{
+  width: 40% ;
+  text-align:  right;
+}
+
+.Right-Side h6{
+text-overflow: ellipsis ;
+ overflow: hidden;
+white-space: nowrap;
+margin: 0;
+color: #fcffff;
+font-size: 14px;
+color: #fcffff;
+}
+
+.Right-Side p{
+text-decoration-line: line-through;
+color: hsla(0,0%,100%,.8);
+margin: 0;
+font-size: 10px;
+font-weight: 400;
+color: #fcffff;
+}
+
+.Select-Item {
+  display: grid;
+  gap: 1rem;
+  padding: 1.25rem 0.5rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 768px) {
+  .Select-Item {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
