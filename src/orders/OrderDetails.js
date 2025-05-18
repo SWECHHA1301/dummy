@@ -10,7 +10,9 @@ const OrderDetails = () => {
           <p className="font-semibold">Order #DEFEAATDO42347</p>
           <p className="text-xs text-gray-500">3 items</p>
         </div>
-        <button className="text-sm text-purple-600 border px-3 py-1 rounded-full">Help</button>
+        <button className="text-sm text-purple-600 border px-3 py-1 rounded-full">
+          Help
+        </button>
       </div>
 
       {/* Status */}
@@ -32,7 +34,8 @@ const OrderDetails = () => {
           />
           <div className="ml-3 flex-1">
             <p className="font-semibold text-sm">
-              boAt Rockerz 425 On Ear BT Headphones 25H Playtime, BEAST mode and BTv5.2 (Active Black)
+              boAt Rockerz 425 On Ear BT Headphones 25H Playtime, BEAST mode and
+              BTv5.2 (Active Black)
             </p>
             <p className="text-xs text-gray-500">1 pc · 1 unit</p>
           </div>
@@ -49,7 +52,9 @@ const OrderDetails = () => {
 
         <div className="flex justify-between text-sm mb-1">
           <p className="text-gray-600">Item Total & GST</p>
-          <p><s className="text-gray-400">₹2999.98</s> ₹1299.98</p>
+          <p>
+            <s className="text-gray-400">₹2999.98</s> ₹1299.98
+          </p>
         </div>
         <div className="flex justify-between text-sm mb-1">
           <p>🪙 Extra Discount With Pass</p>
@@ -135,10 +140,3 @@ const OrderDetails = () => {
 };
 
 export default OrderDetails;
-
-
-
-
-
-
-
