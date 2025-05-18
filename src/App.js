@@ -32,14 +32,10 @@
 import React from 'react'
 import ProductDetail from "./ProductDetails/ProductDetail";
 import './ProductDetails/product.css'
-import LoginForm from './login/LoginForm'
-import LoginContinue from './login/LoginContinue'
 export default function App() {
   return (
     <div>
     <ProductDetail/> 
-   <LoginForm/>
-    <LoginContinue/> 
     </div>
   )
 }
