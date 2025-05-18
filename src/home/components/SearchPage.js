@@ -37,14 +37,14 @@ const itemImage = [
     originalPrice: 104,
     image: "https://cdn.zeptonow.com/production/tr:w-250,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/e4b4199c-9491-4963-bd1a-36c0d69021f0.jpg"
   },
-    {
+  {
     name: "Ugaoo Jade Feng-Shui Plant with Ibiza Pot",
     volume: "1 pc",
     price: 179,
     originalPrice: 229,
     image: "https://cdn.zeptonow.com/production/tr:w-250,ar-3276-3276,pr-true,f-auto,q-80/cms/product_variant/2ade75c6-33e6-4c2f-8d39-9ffa07ad43d9.jpeg"
   },
-    {
+  {
     name: "Mango Banganapalli",
     volume: "1Kg",
     price: 160,
@@ -57,19 +57,20 @@ const itemImage = [
     price: 79,
     originalPrice: 120,
     image: "https://cdn.zeptonow.com/production/tr:w-250,ar-1200-1200,pr-true,f-auto,q-80/cms/product_variant/a12f358c-1197-4524-a4fd-1f5c7d146a43.jpeg"
-  },
+  }
 ];
 
-const SearchPage = ({ searchTerm = "", title }) => {
-  const filtered = itemImage.filter(item =>
+const SearchPage = ({ searchTerm = "", setSearchTerm }) => {
+    const filtered = itemImage.filter(item =>
     item.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
     <div className="search-page">
       <h2>Recent Search</h2>
-      <p className="recent-tag">Boat headphones</p>
-      <p className="recent-tag">Basmati rice</p>
+      <p className="recent-tag" onClick={() => setSearchTerm("Boat headphones")}>Boat headphones</p>
+      <p className="recent-tag" onClick={() => setSearchTerm("Basmati rice")}>Basmati rice</p>
+
 
       <div className="banner">
         <img
@@ -88,7 +89,11 @@ const SearchPage = ({ searchTerm = "", title }) => {
                 strokeWidth="3"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
-                style={{ height: "1rem", width: "1rem", color: "rgb(255, 50, 105)" }}
+                style={{
+                  height: "1rem",
+                  width: "1rem",
+                  color: "rgb(255, 50, 105)"
+                }}
               >
                 <path
                   d="M12 4v16m8-8H4"
@@ -101,7 +106,16 @@ const SearchPage = ({ searchTerm = "", title }) => {
 
             <div className="Cover">
               <div className="Left-Side">
-                <h6 style={{ overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>{item.name}</h6>
+                <h6
+                  style={{
+                    overflow: "hidden",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical"
+                  }}
+                >
+                  {item.name}
+                </h6>
                 <p>{item.volume}</p>
               </div>
               <div className="Right-Side">
@@ -117,6 +131,3 @@ const SearchPage = ({ searchTerm = "", title }) => {
 };
 
 export default SearchPage;
-
-
-

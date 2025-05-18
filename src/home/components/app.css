@@ -8,7 +8,7 @@ body, html {
   width: 100%;
   overflow-x: hidden;
 }
-  
+
   header {
     display: flex;
     align-items: center;
@@ -859,5 +859,6 @@ body, html {
   .location label {
     font-size: 12px;
   }
+  
 }
 
