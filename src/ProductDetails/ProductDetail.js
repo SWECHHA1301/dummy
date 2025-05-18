@@ -1,4 +1,5 @@
 
+
 import Detail from "./Component/Detail/Detail";
 import ImageDetails from "./Component/imageDetail/ImageDetails";
 import SimilarItem from "./Component/SimilarItem/SimilarItem";

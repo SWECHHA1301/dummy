@@ -76,7 +76,7 @@ const SimilarItem = ({ searchTerm ,title}) => {
       <div className='title'>
         <p>{title}</p>
       </div>
-     <div className="slides">
+     <div className="slided">
         <div className="slider">
           {filtered.map((item, index) => (
             <div className="slide" key={index}>
