@@ -39,9 +39,6 @@ function Navbar({ searchTerm, setSearchTerm }) {
       <div className="location">
         <label htmlFor="location">Select Location</label>
         <select id="location" className="custom-select">
-          <option value="1">Mumbai</option>
-          <option value="2">Delhi</option>
-          <option value="3">Bangalore</option>
         </select>
       </div>
 
@@ -77,6 +74,7 @@ function Navbar({ searchTerm, setSearchTerm }) {
 }
 
 export default Navbar;
+
 
 
 

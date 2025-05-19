@@ -64,7 +64,7 @@ export default function CouponsPanel({ onClose }) {
   return (
     <div className='Main-Panel'>
       <div className="coupon-panel">
-        <div className="header">
+        <div className="header-con">
           <div className="heading-panel">
             <h3>Coupons & Offers</h3>
             <button className="close-btn" onClick={onClose}>×</button>
@@ -74,7 +74,7 @@ export default function CouponsPanel({ onClose }) {
         <div className='Coupon-container'>
           {offers.map((offer, index) => (
             <div key={index} className="offer-box">
-              <div className="offer-content">
+              <div className="offers-content">
                 <p>{offer.title}</p>
                 {expanded[index] && offer.details.length > 0 && (
                   <ul className="details-list">
@@ -88,7 +88,7 @@ export default function CouponsPanel({ onClose }) {
               <div className='seperate-line'></div>
 
               <div className='View'>
-                <div className="offer-actions">
+                <div className="offers-actions">
                   {offer.details.length > 0 && (
                     <button
                       className="view-more"
@@ -97,7 +97,7 @@ export default function CouponsPanel({ onClose }) {
                       {expanded[index] ? 'View Less' : 'View More'}
                     </button>
                   )}
-                  <span className="min-order">
+                  <span className="min-orders">
                     Min Order Required: ₹{offer.minOrder}
                   </span>
                 </div>
