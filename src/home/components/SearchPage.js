@@ -61,9 +61,10 @@ const itemImage = [
 ];
 
 const SearchPage = ({ searchTerm = "", setSearchTerm }) => {
-    const filtered = itemImage.filter(item =>
+  const filtered = itemImage.filter(item =>
     item.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
 
   return (
     <div className="search-page">

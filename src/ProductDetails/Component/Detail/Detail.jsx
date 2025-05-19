@@ -11,7 +11,7 @@ export default function Detail() {
 
     <>
       <div className='card-container'>
-        <div className='card'>
+        <div className='cardSection'>
           <div>
             <div style={{ borderRadius: '1rem' }}>
               <div className='heading'>

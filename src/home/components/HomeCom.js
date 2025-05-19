@@ -110,7 +110,7 @@ function HomeCom() {
                 <p className="price2">
                   {product.price} <del>{product.originalPrice}</del>
                 </p>
-                <button>Add to Cart</button>
+                <button className='add-in-cart'>Add to Cart</button>
               </div>
             ))}
           </div>

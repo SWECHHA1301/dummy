@@ -203,7 +203,7 @@ body, html {
     font-size: 11px;
   }
   
-  button {
+  .add-in-cart {
     color: #ff007f;
     border: 1px solid #ff007f;
     background-color: #fff;
@@ -215,6 +215,7 @@ body, html {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    width: 100%;
   }
   
   .Elevate {

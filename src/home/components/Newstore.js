@@ -25,7 +25,7 @@ function Newstore({ searchTerm }) {
                 <p className="price4">
                   {product.price} <del>{product.originalPrice}</del>
                 </p>
-                <button>Add to Cart</button>
+                <button className='add-in-cart'>Add to Cart</button>
               </Link>
             ))}
           </div>

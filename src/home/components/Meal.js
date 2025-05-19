@@ -103,7 +103,7 @@ function Meal({ searchTerm }) {
                   {product.price}{" "}
                   {product.originalPrice && <del>{product.originalPrice}</del>}
                 </p>
-                <button>Add to Cart</button>
+                <button className='add-in-cart'>Add to Cart</button>
               </div>
             ))}
           </div>

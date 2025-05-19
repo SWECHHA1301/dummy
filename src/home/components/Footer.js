@@ -44,8 +44,8 @@ function Footer() {
     <div className="download">
      <ul>
      <li>Download App</li>
-     <li><button><img src="playstore.png" alt=''/>&nbsp;&nbsp;Get it on play store</button></li>
-     <li><button><img src="apple.png" alt='' />&nbsp;&nbsp;Get it on app store</button></li>
+     <li><button className='add-in-cart'><img src="playstore.png" alt=''/>&nbsp;&nbsp;Get it on play store</button></li>
+     <li><button className='add-in-cart'><img src="apple.png" alt='' />&nbsp;&nbsp;Get it on app store</button></li>
    </ul>
     </div>
    </div>

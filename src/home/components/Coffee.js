@@ -107,7 +107,7 @@ const Coffee = ({ searchTerm }) => {
               <p className="price">
                 ₹{item.price} <del>₹{item.originalPrice}</del>
               </p>
-              <button>Add to Cart</button>
+              <button className='add-in-cart'>Add to Cart</button>
             </div>
           ))}
         </div>
